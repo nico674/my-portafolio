@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Ing. Electrónica | Portafolio Frontend</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <div class="navbar">
+      <div class="logo">Nicolás Díaz Vargas </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Enfoque</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="btn-outline" id="navContactBtn">Conectar</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="inicio">
+    <div class="container hero">
+      <div class="hero-content">
+        <span class="hero-badge">⚡ Estudiante de Ingeniería Electrónica | </span>
+        <h1>Uniendo <span class="hero-highlight">hardware y software</span> para crear soluciones inteligentes</h1>
+        <p class="hero-desc">Apasionado por la electrónica y la programación de sistemas embebidos. Transformo ideas en interfaces frontend modernas, funcionales y conectadas.</p>
+        <div class="hero-buttons">
+          <button class="btn-primary" id="heroContactBtn">Ver proyectos <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></button>
+          <button class="btn-secondary" id="heroAboutBtn">Mi formación</button>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="avatar-placeholder">
+          <i class="fas fa-microchip"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="container">
+      <h2 class="section-title">Dónde confluyen la electrónica y el frontend</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Desarrollo Frontend</h3>
+          <p>HTML5, CSS3, JavaScript, React y Vue. Interfaces responsivas, accesibles y optimizadas.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-microchip"></i></div>
+          <h3>IoT & Dashboards</h3>
+          <p>Visualización de datos de sensores en tiempo real, integración con hardware y APIs.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <h3>Prototipado Rápido</h3>
+          <p>Diseño de UI/UX para sistemas embebidos, monitoreo industrial y dispositivos médicos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <div class="container">
+      <h2 class="section-title">Proyectos destacados (Electrónica + Web)</h2>
+      <div class="projects-grid">
+        <div class="project-item">
+          <div class="project-img"><i class="fa-solid fa-mug-hot"></i></div>
+          <div class="project-info">
+            <h3>Monitoreo y calificacion de catacion de cafe.</h3>
+            <p>Dashboard en tiempo real con ESP32, sensores ambientales y gráficos interactivos (Chart.js).</p>
+            <span class="project-tag">React · MQTT · Arduino</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-img"><i class="fas fa-robot"></i></div>
+          <div class="project-info">
+            <h3>Control de Brazo Robótico</h3>
+            <p>Interfaz web para manipular un brazo robótico vía WebSocket + simulación 3D.</p>
+            <span class="project-tag">Three.js · Node · Firmata</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-img"><i class="fas fa-charging-station"></i></div>
+          <div class="project-info">
+            <h3>Smart Charging Manager</h3>
+            <p>Panel de control para estaciones de carga eléctrica con autenticación y mapas en tiempo real.</p>
+            <span class="project-tag">Vue · Leaflet · Firebase</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="about-wrapper">
+        <div class="about-text">
+          <h3>Ingeniería Electrónica con alma creativa</h3>
+          <p>Soy estudiante avanzado de Ingeniería Electrónica, con fuerte orientación autodidacta al desarrollo frontend. Me encanta construir puentes entre el mundo físico (sensores, microcontroladores) y las aplicaciones web modernas. Actualmente profundizo en React, TypeScript y diseño de sistemas de monitoreo industrial.</p>
+          <p>Mi objetivo es diseñar experiencias de usuario que no solo se vean bien, sino que también controlen y optimicen dispositivos reales. He participado en hackathones tecnológicos y desarrollado prototipos para domótica de bajo costo.</p>
+          <div class="skill-badge">
+            <span>C++/Arduino</span>
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>Python</span>
+            <span>Tailwind CSS</span>
+            <span>Node.js</span>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-number">--</div>
+          <p>Proyectos integrados (IoT + Web)</p>
+          <div class="stat-number" style="margin-top: 24px;">--</div>
+          <p>Hackathones ganados en UI/UX técnica</p>
+          <div class="stat-number" style="margin-top: 24px;">--</div>
+          <p>Años de experiencia en frontend</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title">¿Colaboramos en un proyecto híbrido?</h2>
+      <div class="contact-flex">
+        <div class="contact-info">
+          <h3>Hablemos de tecnología</h3>
+          <p>Ya sea una interfaz para un dispositivo electrónico, un dashboard o una web corporativa, estaré encantado de aportar mi visión de ingeniero y desarrollador.</p>
+          <div class="contact-detail">
+            <i class="fas fa-envelope"></i>
+            <span>u20212201463@usco.edu.co</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fab fa-github"></i>
+            <span>https://github.com/nico674</span>
+          </div>
+          <div class="contact-detail">
+            <i class="fab fa-linkedin"></i>
+            <span>www.linkedin.com/in/nicolás-díaz-vargas</span>
+          </div>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input type="text" placeholder="Nombre completo" id="nameInput" required>
+          <input type="email" placeholder="Correo electrónico" id="emailInput" required>
+          <textarea rows="4" placeholder="Cuéntame tu idea o proyecto..." id="msgInput" required></textarea>
+          <button type="submit" id="submitBtn">Enviar mensaje <i class="fas fa-paper-plane"></i></button>
+          <div class="form-message" id="formFeedback"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="social-icons">
+      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>© 2025 Nicolas Diaz — Estudiante de Ing. Electrónica & /\</p>
+  </div>
+</footer>
+
+<script>
+ src="main.js"
+</script>
+</body>
+</html> 
