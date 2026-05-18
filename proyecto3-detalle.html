@@ -3,491 +3,211 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sitio en Construcción | Próximamente</title>
-  <!-- Google Fonts + Font Awesome -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <link rel="stylesheet" href="proyecto1.css">
+    </head>
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
-      min-height: 100vh;
-      color: #f1f5f9;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow-x: hidden;
-    }
 
-    /* Fondo con efecto de grid y partículas sutiles */
-    body::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: 
-        linear-gradient(rgba(37, 99, 235, 0.08) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(37, 99, 235, 0.08) 1px, transparent 1px);
-      background-size: 50px 50px;
-      pointer-events: none;
-    }
+  <a class="back-btn" href="index.html" id="backBtn">
+    <i class="fas fa-arrow-left"></i> Volver al portafolio
+  </a>
 
-    body::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 20% 50%, rgba(37, 99, 235, 0.1), transparent 50%);
-      pointer-events: none;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px 20px;
-      padding: 48px 32px;
-      background: rgba(15, 23, 42, 0.65);
-      backdrop-filter: blur(12px);
-      border-radius: 48px;
-      border: 1px solid rgba(37, 99, 235, 0.3);
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-      text-align: center;
-      position: relative;
-      z-index: 2;
-      transition: all 0.3s ease;
-    }
-
-    /* Icono principal animado */
-    .construction-icon {
-      font-size: 5rem;
-      color: #3b82f6;
-      margin-bottom: 24px;
-      animation: pulse 2s infinite;
-      display: inline-block;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        text-shadow: 0 0 0 rgba(59, 130, 246, 0);
-      }
-      50% {
-        transform: scale(1.08);
-        text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
-      }
-      100% {
-        transform: scale(1);
-        text-shadow: 0 0 0 rgba(59, 130, 246, 0);
-      }
-    }
-
-    h1 {
-      font-size: 3rem;
-      font-weight: 800;
-      margin-bottom: 16px;
-      background: linear-gradient(135deg, #ffffff, #94a3b8);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      letter-spacing: -0.02em;
-    }
-
-    .badge {
-      display: inline-block;
-      background: rgba(59, 130, 246, 0.2);
-      backdrop-filter: blur(4px);
-      border: 1px solid rgba(59, 130, 246, 0.5);
-      padding: 6px 18px;
-      border-radius: 100px;
-      font-size: 0.85rem;
-      font-weight: 500;
-      color: #93c5fd;
-      margin-bottom: 24px;
-    }
-
-    .description {
-      font-size: 1.2rem;
-      color: #cbd5e1;
-      max-width: 600px;
-      margin: 0 auto 32px auto;
-      line-height: 1.6;
-    }
-
-    /* Contador */
-    .countdown {
-      display: flex;
-      justify-content: center;
-      gap: 24px;
-      margin: 40px 0;
-      flex-wrap: wrap;
-    }
-
-    .countdown-item {
-      background: rgba(0, 0, 0, 0.4);
-      backdrop-filter: blur(8px);
-      border-radius: 24px;
-      padding: 20px 24px;
-      min-width: 100px;
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      transition: transform 0.2s;
-    }
-
-    .countdown-item:hover {
-      transform: translateY(-4px);
-      border-color: #3b82f6;
-    }
-
-    .countdown-number {
-      font-size: 2.8rem;
-      font-weight: 800;
-      color: #60a5fa;
-      line-height: 1;
-    }
-
-    .countdown-label {
-      font-size: 0.85rem;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #94a3b8;
-      margin-top: 8px;
-    }
-
-    /* Barra de progreso */
-    .progress-container {
-      max-width: 500px;
-      margin: 32px auto;
-    }
-
-    .progress-label {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.85rem;
-      margin-bottom: 8px;
-      color: #94a3b8;
-    }
-
-    .progress-bar-bg {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 100px;
-      height: 8px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      background: linear-gradient(90deg, #3b82f6, #60a5fa);
-      width: 68%;
-      height: 100%;
-      border-radius: 100px;
-      animation: shimmer 1.5s infinite;
-      position: relative;
-    }
-
-    @keyframes shimmer {
-      0% { opacity: 0.7; }
-      50% { opacity: 1; }
-      100% { opacity: 0.7; }
-    }
-
-    /* Formulario de notificación */
-    .notify-form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      margin: 32px auto;
-      max-width: 480px;
-    }
-
-    .notify-form input {
-      flex: 1;
-      padding: 14px 20px;
-      border-radius: 60px;
-      border: none;
-      background: rgba(255, 255, 255, 0.1);
-      backdrop-filter: blur(4px);
-      font-family: 'Inter', sans-serif;
-      font-size: 1rem;
-      color: white;
-      border: 1px solid rgba(59, 130, 246, 0.4);
-      transition: all 0.2s;
-    }
-
-    .notify-form input::placeholder {
-      color: #94a3b8;
-    }
-
-    .notify-form input:focus {
-      outline: none;
-      border-color: #3b82f6;
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    .notify-form button {
-      background: #3b82f6;
-      border: none;
-      padding: 14px 28px;
-      border-radius: 60px;
-      font-weight: 600;
-      font-family: 'Inter', sans-serif;
-      color: white;
-      cursor: pointer;
-      transition: all 0.2s;
-      font-size: 1rem;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .notify-form button:hover {
-      background: #2563eb;
-      transform: scale(1.02);
-    }
-
-    .message-feedback {
-      font-size: 0.85rem;
-      margin-top: 12px;
-      min-height: 40px;
-    }
-
-    /* Redes sociales */
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 32px;
-      margin: 40px 0 24px;
-    }
-
-    .social-links a {
-      color: #94a3b8;
-      font-size: 1.8rem;
-      transition: all 0.2s;
-    }
-
-    .social-links a:hover {
-      color: #60a5fa;
-      transform: translateY(-3px);
-    }
-
-    /* Contacto directo */
-    .contact-email {
-      margin-top: 24px;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-
-    .contact-email a {
-      color: #60a5fa;
-      text-decoration: none;
-    }
-
-    .contact-email a:hover {
-      text-decoration: underline;
-    }
-
-    /* Animaciones adicionales */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .container > * {
-      animation: fadeInUp 0.6s ease backwards;
-    }
-
-    .container > :nth-child(1) { animation-delay: 0.1s; }
-    .container > :nth-child(2) { animation-delay: 0.2s; }
-    .container > :nth-child(3) { animation-delay: 0.3s; }
-    .container > :nth-child(4) { animation-delay: 0.4s; }
-    .container > :nth-child(5) { animation-delay: 0.5s; }
-
-    /* Responsive */
-    @media (max-width: 640px) {
-      .container {
-        padding: 32px 20px;
-        margin: 20px;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      .countdown-item {
-        padding: 12px 16px;
-        min-width: 70px;
-      }
-      .countdown-number {
-        font-size: 1.8rem;
-      }
-      .notify-form {
-        flex-direction: column;
-      }
-      .notify-form button {
-        justify-content: center;
-      }
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <!-- Icono animado -->
-    <div class="construction-icon">
-      <i class="fas fa-hard-hat"></i>
-    </div>
-
-    <!-- Badge de estado -->
-    <div class="badge">
-      <i class="fas fa-code-branch"></i> EN DESARROLLO ACTIVO
-    </div>
-
-    <!-- Título principal -->
-    <h1>¡Algo increíble está por llegar!</h1>
-
-    <!-- Descripción -->
-    <p class="description">
-      Estamos construyendo una experiencia digital completamente nueva. 
-      Mientras tanto, prepárate para contenido exclusivo y herramientas innovadoras.
-    </p>
-
-    <!-- Contador regresivo (ejemplo: 15 días desde hoy) -->
-    <div class="countdown" id="countdown">
-      <div class="countdown-item">
-        <div class="countdown-number" id="days">00</div>
-        <div class="countdown-label">Días</div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <div class="category-pill">
+        <i class="fas fa-book-open"></i>
+        Publicación técnica · Electrónica analógica
       </div>
-      <div class="countdown-item">
-        <div class="countdown-number" id="hours">00</div>
-        <div class="countdown-label">Horas</div>
-      </div>
-      <div class="countdown-item">
-        <div class="countdown-number" id="minutes">00</div>
-        <div class="countdown-label">Minutos</div>
-      </div>
-      <div class="countdown-item">
-        <div class="countdown-number" id="seconds">00</div>
-        <div class="countdown-label">Segundos</div>
+      <h1 class="hero-title">
+        Aplicaciones avanzadas de<br>
+        <span class="hero-highlight">amplificadores operacionales</span>
+      </h1>
+      <div class="hero-meta">
+        <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</div>
+        <div class="meta-item"><i class="fas fa-users"></i> Colaboración editorial</div>
+        <div class="meta-item"><i class="fas fa-microchip"></i> 6 aplicaciones desarrolladas</div>
+        <div class="meta-item"><i class="fas fa-file-alt"></i> LaTeX · LTspice · Hardware</div>
       </div>
     </div>
+  </section>
 
-    <!-- Barra de progreso visual -->
-    <div class="progress-container">
-      <div class="progress-label">
-        <span>Progreso del desarrollo</span>
-        <span>68%</span>
+  <!-- CONTENT -->
+  <div class="content-wrap">
+
+    <!-- MAIN COLUMN -->
+    <main>
+
+      <div class="prose">
+        <p class="section-label">Descripción del proyecto</p>
+        <h2>Electrónica analógica documentada con rigor editorial</h2>
+        <p>
+          Participé como colaborador técnico en la edición y producción de un libro especializado sobre amplificadores operacionales. Mi rol abarcó desde el diseño y validación de los circuitos hasta la maquetación técnica en LaTeX, garantizando coherencia pedagógica entre teoría y práctica.
+        </p>
+        <p>
+          Cada aplicación fue simulada en LTspice, prototipada en laboratorio y documentada con capturas de osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, comportamiento real del componente y casos de uso en la industria.
+        </p>
       </div>
-      <div class="progress-bar-bg">
-        <div class="progress-fill"></div>
+
+      <!-- Circuit mockup (SVG illustration) -->
+      
+
+      <!-- Applications -->
+      <div class="apps-block">
+        <p class="section-label">Contenido desarrollado</p>
+        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Las 6 aplicaciones del libro</h2>
+        <div class="app-list">
+          <div class="app-card">
+            <div class="app-num">1</div>
+            <div>
+              <div class="app-name">Amplificador diferencial de alta impedancia</div>
+              <div class="app-desc">Diseño de etapas de entrada con rechazo de modo común (CMRR &gt; 80 dB) para instrumentación de precisión.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">2</div>
+            <div>
+              <div class="app-name">Filtro activo Sallen-Key de segundo orden</div>
+              <div class="app-desc">Implementación paso-bajo y paso-alto con respuesta Butterworth/Chebyshev, análisis de sensibilidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">3</div>
+            <div>
+              <div class="app-name">Oscilador de cuadratura RC con op-amp</div>
+              <div class="app-desc">Generación de señales senoidales en cuadratura, distorsión THD &lt; 1 %, control de amplitud automático.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">4</div>
+            <div>
+              <div class="app-name">Integrador y diferenciador de precisión</div>
+              <div class="app-desc">Circuitos para procesamiento de señal analógica, compensación de offset y análisis de estabilidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">5</div>
+            <div>
+              <div class="app-name">Convertidor V/I y I/V de 4-20 mA</div>
+              <div class="app-desc">Interfaz para sensores industriales, protección ante cortocircuito y análisis de error de linealidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">6</div>
+            <div>
+              <div class="app-name">Comparador con histéresis (Schmitt Trigger)</div>
+              <div class="app-desc">Diseño de umbrales ajustables, eliminación de rebotes y aplicación en detección de cruce por cero.</div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Formulario de notificación -->
-    <form id="notifyForm" class="notify-form">
-      <input type="email" id="emailInput" placeholder="tu@correo.com" required>
-      <button type="submit">
-        <i class="fas fa-bell"></i> Notificarme
-      </button>
-    </form>
-    <div id="formFeedback" class="message-feedback"></div>
+      <!-- Simulations -->
+      <div class="sim-block">
+        <p class="section-label" style="margin-top:52px;">Metodología</p>
+        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Proceso de validación</h2>
+        <div class="sim-grid">
+          <div class="sim-card">
+            <div class="sim-icon"><i class="fas fa-wave-square"></i></div>
+            <div class="sim-title">Simulación LTspice</div>
+            <div class="sim-sub">Análisis AC, DC y transitorio de cada circuito</div>
+          </div>
+          <div class="sim-card">
+            <div class="sim-icon"><i class="fas fa-flask"></i></div>
+            <div class="sim-title">Prototipado en laboratorio</div>
+            <div class="sim-sub">Validación con componentes reales (LM741, TL071, LM324)</div>
+          </div>
+          <div class="sim-card">
+            <div class="sim-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="sim-title">Capturas de osciloscopio</div>
+            <div class="sim-sub">Evidencia fotográfica de respuesta en frecuencia y transitoria</div>
+          </div>
+          <div class="sim-card">
+            <div class="sim-icon"><i class="fas fa-file-code"></i></div>
+            <div class="sim-title">Maquetación en LaTeX</div>
+            <div class="sim-sub">Ecuaciones, esquemáticos (CircuiTikZ) y gráficos vectoriales</div>
+          </div>
+        </div>
+      </div>
 
-    <!-- Redes sociales -->
-    <div class="social-links">
-      <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-      <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-    </div>
+    </main>
 
-    <!-- Contacto directo -->
-    <div class="contact-email">
-      ¿Necesitas contactarnos ahora? <a href="mailto:hello@midominio.com">hello@midominio.com</a>
-    </div>
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+      <div class="side-card">
+        <h4>Tecnologías y herramientas</h4>
+        <div class="tags-wrap">
+          <span class="tag">LaTeX</span>
+          <span class="tag">LTspice</span>
+          <span class="tag">CircuiTikZ</span>
+          <span class="tag">MATLAB</span>
+          <span class="tag orange">LM741</span>
+          <span class="tag orange">TL071</span>
+          <span class="tag orange">LM324</span>
+          <span class="tag">Osciloscopio</span>
+          <span class="tag">Generador de funciones</span>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h4>Datos del proyecto</h4>
+        <div class="stat-row">
+          <div class="stat-icon"><i class="fas fa-book"></i></div>
+          <div>
+            <div class="stat-label">Tipo</div>
+            <div class="stat-val">Publicación técnica</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          <div>
+            <div class="stat-label">Aplicaciones</div>
+            <div class="stat-val">6 capítulos / circuitos</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon"><i class="fas fa-user-edit"></i></div>
+          <div>
+            <div class="stat-label">Rol</div>
+            <div class="stat-val">Coautor & editor técnico</div>
+          </div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon"><i class="fas fa-calendar"></i></div>
+          <div>
+            <div class="stat-label">Año</div>
+            <div class="stat-val">2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="side-card">
+        <h4>¿Te interesa colaborar?</h4>
+        <a href="index.html#contacto" class="cta-btn">
+          <i class="fas fa-envelope" style="margin-right:8px;"></i>Escribir a Alex
+        </a>
+        <a href="#" class="cta-btn-outline">
+          <i class="fas fa-download" style="margin-right:8px;"></i>Ver extracto del libro
+        </a>
+      </div>
+
+    </aside>
+
   </div>
 
   <script>
-    // Fecha objetivo: 15 días a partir de hoy (puedes cambiarla manualmente)
-    // Ejemplo: establecemos lanzamiento para 15 días después
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 15);
-    targetDate.setHours(23, 59, 59, 999);
-
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const distance = targetDate.getTime() - now;
-
-      if (distance < 0) {
-        // Si ya pasó la fecha, mostramos ceros y un mensaje opcional
-        document.getElementById('days').innerText = '00';
-        document.getElementById('hours').innerText = '00';
-        document.getElementById('minutes').innerText = '00';
-        document.getElementById('seconds').innerText = '00';
-        return;
+    // El botón "Volver" regresa al historial o a index.html
+    document.getElementById('backBtn').addEventListener('click', function(e) {
+      if (history.length > 1) {
+        e.preventDefault();
+        history.back();
       }
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      document.getElementById('days').innerText = days < 10 ? '0' + days : days;
-      document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
-      document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
-      document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
-    }
-
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-
-    // Formulario de notificación (simulación)
-    const form = document.getElementById('notifyForm');
-    const feedback = document.getElementById('formFeedback');
-
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const emailInput = document.getElementById('emailInput');
-      const email = emailInput.value.trim();
-
-      if (!email) {
-        feedback.innerHTML = '<span style="color:#f87171;">✗ Por favor ingresa un correo válido.</span>';
-        return;
-      }
-      if (!email.includes('@') || !email.includes('.')) {
-        feedback.innerHTML = '<span style="color:#f87171;">✗ Correo electrónico no válido.</span>';
-        return;
-      }
-
-      // Simulación de envío exitoso
-      const btn = form.querySelector('button');
-      const originalText = btn.innerHTML;
-      btn.disabled = true;
-      btn.innerHTML = '<i class="fas fa-spinner fa-pulse"></i> Enviando...';
-
-      setTimeout(() => {
-        feedback.innerHTML = '<span style="color:#4ade80;">✓ ¡Gracias! Te avisaremos cuando lancemos el sitio.</span>';
-        emailInput.value = '';
-        btn.disabled = false;
-        btn.innerHTML = originalText;
-        
-        // Limpiar mensaje después de 5 segundos
-        setTimeout(() => {
-          if (feedback.innerHTML.includes('Gracias')) {
-            feedback.innerHTML = '';
-          }
-        }, 5000);
-      }, 800);
     });
   </script>
+
 </body>
 </html>
