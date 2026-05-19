@@ -1,0 +1,4594 @@
+{
+    "version": "0.1",
+    "tikzSettings": {},
+    "components": [
+        {
+            "type": "node",
+            "position": {
+                "x": 220.471,
+                "y": -228.246
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 37.795,
+                    "y": -355.276
+                },
+                {
+                    "x": 283.465,
+                    "y": -355.276
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -207.874
+                },
+                {
+                    "x": 0,
+                    "y": 9.449
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -207.874
+                },
+                {
+                    "x": 175.495,
+                    "y": -209.726
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -207.874
+                },
+                {
+                    "x": -188.976,
+                    "y": -207.874
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 175.495,
+                    "y": -246.765
+                },
+                {
+                    "x": 160.63,
+                    "y": -245.669
+                },
+                {
+                    "x": 274.016,
+                    "y": -292.913
+                },
+                {
+                    "x": 274.016,
+                    "y": -226.772
+                },
+                {
+                    "x": 265.447,
+                    "y": -228.246
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 274.016,
+                    "y": -228.246
+                },
+                {
+                    "x": 377.953,
+                    "y": -230.551
+                }
+            ],
+            "id": "empty diode"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 283.465,
+                    "y": -355.276
+                },
+                {
+                    "x": 302.362,
+                    "y": -226.772
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 37.795,
+                    "y": -355.276
+                },
+                {
+                    "x": 37.795,
+                    "y": -207.874
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 0,
+                "y": 9.449
+            },
+            "id": "ground"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 218.582,
+                "y": 210.18
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 35.906,
+                    "y": 83.15
+                },
+                {
+                    "x": 281.576,
+                    "y": 83.15
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1.889,
+                    "y": 230.552
+                },
+                {
+                    "x": -1.889,
+                    "y": 447.875
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1.889,
+                    "y": 230.552
+                },
+                {
+                    "x": 173.606,
+                    "y": 228.7
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1.889,
+                    "y": 230.552
+                },
+                {
+                    "x": -190.865,
+                    "y": 230.552
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 173.606,
+                    "y": 191.661
+                },
+                {
+                    "x": 158.741,
+                    "y": 192.757
+                },
+                {
+                    "x": 272.127,
+                    "y": 145.513
+                },
+                {
+                    "x": 272.127,
+                    "y": 211.654
+                },
+                {
+                    "x": 263.558,
+                    "y": 210.18
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 272.127,
+                    "y": 210.18
+                },
+                {
+                    "x": 376.064,
+                    "y": 207.875
+                }
+            ],
+            "id": "empty diode"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 281.576,
+                    "y": 83.15
+                },
+                {
+                    "x": 300.473,
+                    "y": 211.654
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 35.906,
+                    "y": 83.15
+                },
+                {
+                    "x": 35.906,
+                    "y": 230.552
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -1.889,
+                "y": 447.875
+            },
+            "id": "ground"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 180.786,
+                "y": 628.876
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1.89,
+                    "y": 501.846
+                },
+                {
+                    "x": 243.78,
+                    "y": 501.846
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -39.685,
+                    "y": 649.248
+                },
+                {
+                    "x": -39.685,
+                    "y": 866.571
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -39.685,
+                    "y": 649.248
+                },
+                {
+                    "x": 135.81,
+                    "y": 647.396
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -39.685,
+                    "y": 649.248
+                },
+                {
+                    "x": -228.661,
+                    "y": 649.248
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 135.81,
+                    "y": 610.357
+                },
+                {
+                    "x": 120.945,
+                    "y": 611.453
+                },
+                {
+                    "x": 234.331,
+                    "y": 564.209
+                },
+                {
+                    "x": 234.331,
+                    "y": 630.35
+                },
+                {
+                    "x": 225.762,
+                    "y": 628.876
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 234.331,
+                    "y": 628.876
+                },
+                {
+                    "x": 338.268,
+                    "y": 626.571
+                }
+            ],
+            "id": "empty diode"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 243.78,
+                    "y": 501.846
+                },
+                {
+                    "x": 262.677,
+                    "y": 630.35
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1.89,
+                    "y": 501.846
+                },
+                {
+                    "x": -1.89,
+                    "y": 649.248
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -39.685,
+                "y": 866.571
+            },
+            "id": "ground"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 218.582,
+                "y": -644.825
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -627.402
+                },
+                {
+                    "x": -217.323,
+                    "y": -627.402
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -627.402
+                },
+                {
+                    "x": 0,
+                    "y": -438.426
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 173.606,
+                    "y": -663.344
+                },
+                {
+                    "x": 158.741,
+                    "y": -662.248
+                },
+                {
+                    "x": 272.127,
+                    "y": -709.492
+                },
+                {
+                    "x": 272.127,
+                    "y": -643.351
+                },
+                {
+                    "x": 263.558,
+                    "y": -644.825
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 272.127,
+                    "y": -644.825
+                },
+                {
+                    "x": 376.064,
+                    "y": -647.13
+                }
+            ],
+            "id": "empty diode"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 0,
+                "y": -438.426
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 0,
+                    "y": -627.402
+                },
+                {
+                    "x": 173.606,
+                    "y": -626.305
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -103.937,
+                "y": -595.276
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 56.693,
+                "y": -521.575
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -85.039,
+                "y": -238.11
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 98.268,
+                "y": -238.11
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 49.134,
+                "y": -86.929
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 158.74,
+                "y": -325.039
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "0.22 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 196.535,
+                "y": 111.496
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "0.22 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 170.079,
+                "y": 527.244
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "0.22 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -83.15,
+                "y": 196.535
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 94.488,
+                "y": 196.535
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 52.913,
+                "y": 364.725
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 5.669,
+                "y": 789.921
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -132.283,
+                "y": 619.843
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "15 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 66.142,
+                "y": 616.063
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "15 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": -604.725
+                },
+                {
+                    "x": 466.771,
+                    "y": -387.402
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": -604.725
+                },
+                {
+                    "x": 277.795,
+                    "y": -604.725
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 466.771,
+                "y": -387.402
+            },
+            "id": "ground"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 385.512,
+                "y": -574.488
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 438.425,
+                "y": -472.441
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 277.795,
+                    "y": -604.725
+                },
+                {
+                    "x": 275.906,
+                    "y": -646.299
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": -604.725
+                },
+                {
+                    "x": 468.661,
+                    "y": -646.299
+                },
+                {
+                    "x": 376.064,
+                    "y": -647.13
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-",
+                "-|"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": 249.448
+                },
+                {
+                    "x": 466.771,
+                    "y": 466.771
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": 249.448
+                },
+                {
+                    "x": 277.795,
+                    "y": 249.448
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 466.771,
+                "y": 466.771
+            },
+            "id": "ground"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 385.512,
+                "y": 279.685
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 438.425,
+                "y": 381.732
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 466.771,
+                    "y": 249.448
+                },
+                {
+                    "x": 468.661,
+                    "y": 207.874
+                },
+                {
+                    "x": 376.064,
+                    "y": 207.043
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-",
+                "-|"
+            ]
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 428.975,
+                    "y": 668.145
+                },
+                {
+                    "x": 428.975,
+                    "y": 885.468
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 428.975,
+                    "y": 668.145
+                },
+                {
+                    "x": 239.999,
+                    "y": 668.145
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 428.975,
+                "y": 885.468
+            },
+            "id": "ground"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 347.716,
+                "y": 698.382
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 30.236
+            },
+            "text": {
+                "text": "12 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 400.629,
+                "y": 800.429
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 34.016
+            },
+            "text": {
+                "text": "1 uF ",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 428.975,
+                    "y": 668.145
+                },
+                {
+                    "x": 430.865,
+                    "y": 626.571
+                },
+                {
+                    "x": 338.268,
+                    "y": 625.74
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 239.999,
+                    "y": 668.145
+                },
+                {
+                    "x": 234.331,
+                    "y": 628.876
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 277.795,
+                    "y": 249.448
+                },
+                {
+                    "x": 272.127,
+                    "y": 210.18
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 852.662,
+                "y": -255.118
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 807.686,
+                    "y": -273.638
+                },
+                {
+                    "x": 644.409,
+                    "y": -274.016
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 784.252,
+                    "y": -338.268
+                },
+                {
+                    "x": 992.126,
+                    "y": -338.268
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 806.929,
+                "y": -236.22
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 784.252,
+                    "y": -338.268
+                },
+                {
+                    "x": 784.252,
+                    "y": -274.016
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 992.126,
+                    "y": -338.268
+                },
+                {
+                    "x": 897.638,
+                    "y": -255.118
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 893.858,
+                "y": -308.031
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 60.472,
+                "y": 34.016
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 748.346,
+                "y": -253.228
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "1k $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 468.661,
+                    "y": -646.299
+                },
+                {
+                    "x": 621.732,
+                    "y": -274.016
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 377.953,
+                    "y": -230.551
+                },
+                {
+                    "x": 621.732,
+                    "y": -274.016
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 854.551,
+                "y": 226.772
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 809.574,
+                    "y": 208.252
+                },
+                {
+                    "x": 646.298,
+                    "y": 207.874
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 786.141,
+                    "y": 143.622
+                },
+                {
+                    "x": 994.015,
+                    "y": 143.622
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 808.818,
+                "y": 245.67
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 786.141,
+                    "y": 143.622
+                },
+                {
+                    "x": 786.141,
+                    "y": 207.874
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 994.015,
+                    "y": 143.622
+                },
+                {
+                    "x": 899.527,
+                    "y": 226.772
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 895.747,
+                "y": 173.859
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 60.472,
+                "y": 34.016
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 750.235,
+                "y": 228.662
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "1k $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 858.331,
+                "y": 642.52
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 813.354,
+                    "y": 624
+                },
+                {
+                    "x": 650.078,
+                    "y": 623.622
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 789.921,
+                    "y": 559.37
+                },
+                {
+                    "x": 997.795,
+                    "y": 559.37
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 812.598,
+                "y": 661.418
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 789.921,
+                    "y": 559.37
+                },
+                {
+                    "x": 789.921,
+                    "y": 623.622
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 997.795,
+                    "y": 559.37
+                },
+                {
+                    "x": 903.307,
+                    "y": 642.52
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 899.527,
+                "y": 589.607
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 60.472,
+                "y": 34.016
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 754.015,
+                "y": 644.41
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "1k $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 547.021,
+                    "y": 205.568
+                },
+                {
+                    "x": 468.661,
+                    "y": 207.874
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 644.409,
+                    "y": -274.016
+                },
+                {
+                    "x": 621.732,
+                    "y": -274.016
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 646.299,
+                    "y": 207.874
+                },
+                {
+                    "x": 547.021,
+                    "y": 205.568
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 428.975,
+                    "y": 626.571
+                },
+                {
+                    "x": 525.354,
+                    "y": 627.402
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 857.322,
+                "y": 825.411
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 793.701,
+                    "y": 888.189
+                },
+                {
+                    "x": 630.425,
+                    "y": 887.811
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 793.701,
+                    "y": 888.189
+                },
+                {
+                    "x": 1001.575,
+                    "y": 888.189
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 812.346,
+                "y": 806.891
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 793.701,
+                    "y": 842.835
+                },
+                {
+                    "x": 793.701,
+                    "y": 888.189
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 902.298,
+                    "y": 825.411
+                },
+                {
+                    "x": 1001.575,
+                    "y": 888.189
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 903.307,
+                "y": 918.426
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 60.472,
+                "y": 34.016
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 734.362,
+                "y": 908.599
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "1k $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 812.346,
+                    "y": 843.93
+                },
+                {
+                    "x": 793.701,
+                    "y": 842.835
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 567.118,
+                "y": 711.118
+            },
+            "id": "spdt"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 589.606,
+                    "y": 699.213
+                },
+                {
+                    "x": 623.622,
+                    "y": 623.622
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 589.606,
+                    "y": 723.023
+                },
+                {
+                    "x": 630.425,
+                    "y": 887.811
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 623.622,
+                    "y": 623.622
+                },
+                {
+                    "x": 650.079,
+                    "y": 623.622
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 544.252,
+                    "y": 710.551
+                },
+                {
+                    "x": 523.463,
+                    "y": 626.571
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 1362.645,
+                "y": -58.621
+            },
+            "id": "op amp"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 1299.024,
+                    "y": 4.157
+                },
+                {
+                    "x": 1135.748,
+                    "y": 3.779
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": 1299.024,
+                    "y": 4.157
+                },
+                {
+                    "x": 1506.898,
+                    "y": 4.157
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": 1317.669,
+                "y": -77.141
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1299.024,
+                    "y": -41.197
+                },
+                {
+                    "x": 1299.024,
+                    "y": 4.157
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                null
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1407.621,
+                    "y": -58.621
+                },
+                {
+                    "x": 1506.898,
+                    "y": 4.157
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 1408.63,
+                "y": 34.394
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 60.472,
+                "y": 34.016
+            },
+            "text": {
+                "text": "10 k$\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 1239.685,
+                "y": 24.567
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "1k $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1317.669,
+                    "y": -40.102
+                },
+                {
+                    "x": 1299.024,
+                    "y": -41.197
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 994.016,
+                    "y": -257.008
+                },
+                {
+                    "x": 1135.748,
+                    "y": 3.779
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1135.748,
+                    "y": 3.779
+                },
+                {
+                    "x": 994.016,
+                    "y": 226.772
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1137.638,
+                    "y": 226.772
+                },
+                {
+                    "x": 997.795,
+                    "y": 642.52
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": 1137.638,
+                    "y": 642.52
+                },
+                {
+                    "x": 1001.575,
+                    "y": 888.189
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 370.394,
+                "y": -370.394
+            },
+            "size": {
+                "x": 1330.394,
+                "y": 759.685
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 292.913,
+                "y": -49.134
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "5.9pt"
+            },
+            "size": {
+                "x": 275.906,
+                "y": 45.354
+            },
+            "text": {
+                "text": "generador de onda qrs",
+                "justify": 0,
+                "fontSize": "Huge",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 370.394,
+                "y": 257.008
+            },
+            "size": {
+                "x": 1337.953,
+                "y": 415.748
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 264.567,
+                "y": 415.748
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "5.9pt"
+            },
+            "size": {
+                "x": 275.906,
+                "y": 45.354
+            },
+            "text": {
+                "text": "generador de onda P",
+                "justify": 0,
+                "fontSize": "Huge",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 370.394,
+                "y": 714.331
+            },
+            "size": {
+                "x": 1337.953,
+                "y": 461.102
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 185.197,
+                "y": 880.63
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "5.9pt"
+            },
+            "size": {
+                "x": 275.906,
+                "y": 45.354
+            },
+            "text": {
+                "text": "generador de onda T",
+                "justify": 0,
+                "fontSize": "Huge",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 865.512,
+                "y": 718.11
+            },
+            "stroke": {
+                "opacity": 0,
+                "width": "5.9pt"
+            },
+            "size": {
+                "x": 275.906,
+                "y": 45.354
+            },
+            "text": {
+                "text": " onda T Inverida",
+                "justify": 0,
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": 835.276,
+                "y": 629.291
+            },
+            "size": {
+                "x": 370.394,
+                "y": 230.551
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1190.551,
+                "y": -812.598
+            },
+            "size": {
+                "x": 128.504,
+                "y": 181.417
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -1190.551,
+                "y": -901.039
+            },
+            "rotation": -90,
+            "id": "iecsocketR"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -891.968
+                },
+                {
+                    "x": -1254.803,
+                    "y": -891.968
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -839.055
+                },
+                {
+                    "x": -1254.803,
+                    "y": -839.055
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -793.7
+                },
+                {
+                    "x": -1254.803,
+                    "y": -793.7
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -740.787
+                },
+                {
+                    "x": -1254.803,
+                    "y": -740.787
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1126.299,
+                    "y": -891.968
+                },
+                {
+                    "x": -1092.283,
+                    "y": -891.968
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1126.299,
+                    "y": -839.054
+                },
+                {
+                    "x": -1092.283,
+                    "y": -839.054
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1126.299,
+                    "y": -793.7
+                },
+                {
+                    "x": -1092.283,
+                    "y": -793.7
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1126.299,
+                    "y": -740.787
+                },
+                {
+                    "x": -1092.283,
+                    "y": -740.787
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1298.268,
+                "y": -907.086
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 18.898
+            },
+            "text": {
+                "text": "GND PIN1",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1090.394,
+                "y": -899.527
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": "VCC PIN8",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1292.598,
+                "y": -844.724
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 34.016
+            },
+            "text": {
+                "text": "TRIG PIN2",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1283.149,
+                "y": -801.26
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 22.677
+            },
+            "text": {
+                "text": "OUT PIN3",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1292.598,
+                "y": -750.236
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 26.457
+            },
+            "text": {
+                "text": "RESET PIN4",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1082.834,
+                "y": -846.614
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "DISCH PIN7",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1079.055,
+                "y": -803.149
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": " THRES PIN6",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1082.834,
+                "y": -748.346
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "CV PIN 5",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1192.441,
+                "y": -825.826
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": " TIMER 555",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -1330.394,
+                "y": -918.425
+            },
+            "rotation": -180,
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1330.394,
+                    "y": -918.425
+                },
+                {
+                    "x": -1330.394,
+                    "y": -891.968
+                },
+                {
+                    "x": -1288.819,
+                    "y": -891.968
+                },
+                {
+                    "x": -1254.803,
+                    "y": -891.968
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -1058.268,
+                "y": -948.661
+            },
+            "id": "vcc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1058.268,
+                    "y": -948.661
+                },
+                {
+                    "x": -1092.283,
+                    "y": -891.968
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1017.638,
+                "y": -954.33
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 62.362,
+                "y": 18.898
+            },
+            "text": {
+                "text": "5 - 8 V",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -952.441
+                },
+                {
+                    "x": -1390.866,
+                    "y": -816.378
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -952.441
+                },
+                {
+                    "x": -1058.268,
+                    "y": -952.441
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -740.787
+                },
+                {
+                    "x": -1353.071,
+                    "y": -740.787
+                },
+                {
+                    "x": -1353.071,
+                    "y": -952.441
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1434.331,
+                "y": -882.519
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "3.5 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -816.378
+                },
+                {
+                    "x": -1390.866,
+                    "y": -668.976
+                }
+            ],
+            "id": "variable american resistor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1432.441,
+                "y": -742.677
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "100 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -650.078
+                },
+                {
+                    "x": -1390.866,
+                    "y": -404.409
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1436.22,
+                "y": -542.362
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "47 u $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -1039.37,
+                    "y": -742.677
+                },
+                {
+                    "x": -1039.37,
+                    "y": -497.008
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1075.275,
+                "y": -636.85
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "10 n $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1092.283,
+                    "y": -740.787
+                },
+                {
+                    "x": -1039.37,
+                    "y": -742.677
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -1254.803,
+                "y": -400.63
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -404.409
+                },
+                {
+                    "x": -1254.803,
+                    "y": -400.63
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1039.37,
+                    "y": -497.008
+                },
+                {
+                    "x": -1254.803,
+                    "y": -404.409
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1390.866,
+                    "y": -650.078
+                },
+                {
+                    "x": -1390.866,
+                    "y": -668.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1096.063,
+                    "y": -793.7
+                },
+                {
+                    "x": -971.338,
+                    "y": -793.7
+                },
+                {
+                    "x": -1364.409,
+                    "y": -922.204
+                },
+                {
+                    "x": -1390.866,
+                    "y": -668.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -839.055
+                },
+                {
+                    "x": -1364.409,
+                    "y": -839.055
+                },
+                {
+                    "x": -1390.866,
+                    "y": -668.976
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1092.283,
+                    "y": -839.055
+                },
+                {
+                    "x": -1016.693,
+                    "y": -687.874
+                },
+                {
+                    "x": -1481.575,
+                    "y": -687.874
+                },
+                {
+                    "x": -1390.866,
+                    "y": -816.378
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -796.724,
+                "y": 176.655
+            },
+            "size": {
+                "x": 128.504,
+                "y": 181.417
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -796.724,
+                "y": 88.214
+            },
+            "rotation": -90,
+            "id": "iecsocketR"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 97.285
+                },
+                {
+                    "x": -860.976,
+                    "y": 97.285
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 150.199
+                },
+                {
+                    "x": -860.976,
+                    "y": 150.199
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 195.553
+                },
+                {
+                    "x": -860.976,
+                    "y": 195.553
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 248.466
+                },
+                {
+                    "x": -860.976,
+                    "y": 248.466
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -732.472,
+                    "y": 97.285
+                },
+                {
+                    "x": -698.456,
+                    "y": 97.285
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -732.472,
+                    "y": 150.199
+                },
+                {
+                    "x": -698.456,
+                    "y": 150.199
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -732.472,
+                    "y": 195.553
+                },
+                {
+                    "x": -698.456,
+                    "y": 195.553
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -732.472,
+                    "y": 248.466
+                },
+                {
+                    "x": -698.456,
+                    "y": 248.466
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -904.44,
+                "y": 82.167
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 18.898
+            },
+            "text": {
+                "text": "GND PIN1",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -696.566,
+                "y": 89.726
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": "VCC PIN8",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -898.771,
+                "y": 144.529
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 34.016
+            },
+            "text": {
+                "text": "TRIG PIN2",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -889.322,
+                "y": 187.994
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 22.677
+            },
+            "text": {
+                "text": "OUT PIN3",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -898.771,
+                "y": 239.018
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 26.457
+            },
+            "text": {
+                "text": "RESET PIN4",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -689.007,
+                "y": 142.64
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "DISCH PIN7",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -685.228,
+                "y": 186.104
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": " THRES PIN6",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -689.007,
+                "y": 240.907
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "CV PIN 5",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -798.614,
+                "y": 163.427
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": " TIMER 555",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -936.566,
+                "y": 70.829
+            },
+            "rotation": -180,
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -936.566,
+                    "y": 70.829
+                },
+                {
+                    "x": -936.566,
+                    "y": 97.285
+                },
+                {
+                    "x": -894.992,
+                    "y": 97.285
+                },
+                {
+                    "x": -860.976,
+                    "y": 97.285
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -664.44,
+                "y": 40.592
+            },
+            "id": "vcc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -664.44,
+                    "y": 40.592
+                },
+                {
+                    "x": -698.456,
+                    "y": 97.285
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -623.81,
+                "y": 34.923
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 62.362,
+                "y": 18.898
+            },
+            "text": {
+                "text": "5 - 8 V",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 36.813
+                },
+                {
+                    "x": -997.039,
+                    "y": 172.876
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 36.813
+                },
+                {
+                    "x": -664.44,
+                    "y": 36.813
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 248.466
+                },
+                {
+                    "x": -959.243,
+                    "y": 248.466
+                },
+                {
+                    "x": -959.243,
+                    "y": 36.813
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1040.503,
+                "y": 106.734
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "9.1 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 172.876
+                },
+                {
+                    "x": -997.039,
+                    "y": 320.277
+                }
+            ],
+            "id": "variable american resistor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1038.614,
+                "y": 246.577
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "100 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 339.175
+                },
+                {
+                    "x": -997.039,
+                    "y": 584.844
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1042.393,
+                "y": 446.892
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "10 u $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -645.543,
+                    "y": 246.576
+                },
+                {
+                    "x": -645.543,
+                    "y": 492.245
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -681.448,
+                "y": 352.404
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "10 n $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -698.456,
+                    "y": 248.466
+                },
+                {
+                    "x": -645.543,
+                    "y": 246.576
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -860.976,
+                "y": 588.624
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 584.844
+                },
+                {
+                    "x": -860.976,
+                    "y": 588.624
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -645.543,
+                    "y": 492.245
+                },
+                {
+                    "x": -860.976,
+                    "y": 584.844
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -997.039,
+                    "y": 339.175
+                },
+                {
+                    "x": -997.039,
+                    "y": 320.277
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -702.236,
+                    "y": 195.553
+                },
+                {
+                    "x": -577.511,
+                    "y": 195.553
+                },
+                {
+                    "x": -970.582,
+                    "y": 67.049
+                },
+                {
+                    "x": -997.039,
+                    "y": 320.277
+                }
+            ],
+            "stroke": {
+                "width": "1.6pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1288.819,
+                    "y": -793.701
+                },
+                {
+                    "x": -1330.394,
+                    "y": -638.74
+                },
+                {
+                    "x": -894.992,
+                    "y": 150.199
+                }
+            ],
+            "stroke": {
+                "width": "2pt"
+            },
+            "directions": [
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -698.456,
+                    "y": 150.199
+                },
+                {
+                    "x": -575.621,
+                    "y": 150.198
+                }
+            ],
+            "stroke": {
+                "width": "2.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -786.142,
+                "y": 808.819
+            },
+            "size": {
+                "x": 128.504,
+                "y": 181.417
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -786.142,
+                "y": 720.378
+            },
+            "rotation": -90,
+            "id": "iecsocketR"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.41,
+                    "y": 729.449
+                },
+                {
+                    "x": -850.394,
+                    "y": 729.449
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.41,
+                    "y": 782.363
+                },
+                {
+                    "x": -850.394,
+                    "y": 782.363
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.41,
+                    "y": 827.717
+                },
+                {
+                    "x": -850.394,
+                    "y": 827.717
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.41,
+                    "y": 880.63
+                },
+                {
+                    "x": -850.394,
+                    "y": 880.63
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -721.89,
+                    "y": 729.449
+                },
+                {
+                    "x": -687.874,
+                    "y": 729.449
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -721.89,
+                    "y": 782.363
+                },
+                {
+                    "x": -687.874,
+                    "y": 782.363
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -721.89,
+                    "y": 827.717
+                },
+                {
+                    "x": -687.874,
+                    "y": 827.717
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -721.89,
+                    "y": 880.63
+                },
+                {
+                    "x": -687.874,
+                    "y": 880.63
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ],
+            "endArrow": "latex"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -893.858,
+                "y": 714.331
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 18.898
+            },
+            "text": {
+                "text": "GND PIN1",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -685.984,
+                "y": 721.89
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": "VCC PIN8",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -888.189,
+                "y": 776.693
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 34.016
+            },
+            "text": {
+                "text": "TRIG PIN2",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -878.74,
+                "y": 820.158
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 22.677
+            },
+            "text": {
+                "text": "OUT PIN3",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -888.189,
+                "y": 871.182
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 49.134,
+                "y": 26.457
+            },
+            "text": {
+                "text": "RESET PIN4",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -678.425,
+                "y": 774.804
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "DISCH PIN7",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -674.646,
+                "y": 818.268
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": " THRES PIN6",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -678.425,
+                "y": 873.071
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 64.252,
+                "y": 30.236
+            },
+            "text": {
+                "text": "CV PIN 5",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -788.032,
+                "y": 795.591
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 41.575,
+                "y": 26.457
+            },
+            "text": {
+                "text": " TIMER 555",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -925.984,
+                "y": 702.993
+            },
+            "rotation": -180,
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -925.984,
+                    "y": 702.993
+                },
+                {
+                    "x": -925.984,
+                    "y": 729.449
+                },
+                {
+                    "x": -884.41,
+                    "y": 729.449
+                },
+                {
+                    "x": -850.394,
+                    "y": 729.449
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -653.858,
+                "y": 672.756
+            },
+            "id": "vcc"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -653.858,
+                    "y": 672.756
+                },
+                {
+                    "x": -687.874,
+                    "y": 729.449
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -613.228,
+                "y": 667.087
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 62.362,
+                "y": 18.898
+            },
+            "text": {
+                "text": "5 - 8 V",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 668.977
+                },
+                {
+                    "x": -986.457,
+                    "y": 805.04
+                }
+            ],
+            "id": "american resistor"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 668.977
+                },
+                {
+                    "x": -653.858,
+                    "y": 668.977
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.41,
+                    "y": 880.63
+                },
+                {
+                    "x": -948.661,
+                    "y": 880.63
+                },
+                {
+                    "x": -948.661,
+                    "y": 668.977
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|",
+                "|-"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1029.921,
+                "y": 738.898
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "7.5 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 805.04
+                },
+                {
+                    "x": -986.457,
+                    "y": 952.441
+                }
+            ],
+            "id": "variable american resistor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1028.032,
+                "y": 878.741
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "200 K $\\Omega$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 971.339
+                },
+                {
+                    "x": -986.457,
+                    "y": 1217.008
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1031.811,
+                "y": 1079.056
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "10 u $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "path",
+            "points": [
+                {
+                    "x": -634.961,
+                    "y": 878.74
+                },
+                {
+                    "x": -634.961,
+                    "y": 1124.409
+                }
+            ],
+            "id": "capacitor"
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -670.866,
+                "y": 984.568
+            },
+            "stroke": {
+                "opacity": 0
+            },
+            "size": {
+                "x": 71.811,
+                "y": 26.457
+            },
+            "text": {
+                "text": "10 n $F$",
+                "showPlaceholderText": true
+            }
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -687.874,
+                    "y": 880.63
+                },
+                {
+                    "x": -634.961,
+                    "y": 878.74
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "node",
+            "position": {
+                "x": -850.394,
+                "y": 1220.788
+            },
+            "id": "ground"
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 1217.008
+                },
+                {
+                    "x": -850.394,
+                    "y": 1220.788
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -634.961,
+                    "y": 1124.409
+                },
+                {
+                    "x": -850.394,
+                    "y": 1217.008
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -986.457,
+                    "y": 971.339
+                },
+                {
+                    "x": -986.457,
+                    "y": 952.441
+                }
+            ],
+            "stroke": {
+                "width": "0.4pt"
+            },
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -691.654,
+                    "y": 827.717
+                },
+                {
+                    "x": -566.929,
+                    "y": 827.717
+                },
+                {
+                    "x": -960,
+                    "y": 699.213
+                },
+                {
+                    "x": -986.457,
+                    "y": 952.441
+                }
+            ],
+            "stroke": {
+                "width": "1.6pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1330.394,
+                    "y": 150.199
+                },
+                {
+                    "x": -1330.394,
+                    "y": 551.811
+                },
+                {
+                    "x": -884.41,
+                    "y": 782.363
+                }
+            ],
+            "stroke": {
+                "width": "2pt"
+            },
+            "directions": [
+                "|-",
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -687.874,
+                    "y": 782.363
+                },
+                {
+                    "x": -565.039,
+                    "y": 782.363
+                }
+            ],
+            "stroke": {
+                "width": "2.4pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -1334.173,
+                    "y": -532.913
+                },
+                {
+                    "x": -217.323,
+                    "y": -627.402
+                }
+            ],
+            "stroke": {
+                "width": "1.1pt"
+            },
+            "directions": [
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -215.433,
+                    "y": -532.913
+                },
+                {
+                    "x": -188.976,
+                    "y": -207.874
+                }
+            ],
+            "directions": [
+                "|-"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -894.992,
+                    "y": 195.553
+                },
+                {
+                    "x": -941.102,
+                    "y": 328.819
+                },
+                {
+                    "x": -190.865,
+                    "y": 230.552
+                }
+            ],
+            "stroke": {
+                "width": "1.1pt"
+            },
+            "directions": [
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "wire",
+            "points": [
+                {
+                    "x": -884.409,
+                    "y": 827.717
+                },
+                {
+                    "x": -933.543,
+                    "y": 835.276
+                },
+                {
+                    "x": -910.866,
+                    "y": 1054.488
+                },
+                {
+                    "x": -396.85,
+                    "y": 650.079
+                },
+                {
+                    "x": -228.661,
+                    "y": 649.248
+                }
+            ],
+            "stroke": {
+                "width": "1.1pt"
+            },
+            "directions": [
+                "-|",
+                "|-",
+                "-|",
+                "-|"
+            ]
+        },
+        {
+            "type": "rect",
+            "position": {
+                "x": -1003.464,
+                "y": 207.874
+            },
+            "stroke": {
+                "width": "1.3pt"
+            },
+            "size": {
+                "x": 1356.85,
+                "y": 2415.118
+            },
+            "text": {
+                "text": "Generador de Ritmo ",
+                "fontSize": "Huge"
+            }
+        }
+    ]
+}

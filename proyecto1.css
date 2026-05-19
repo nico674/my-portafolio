@@ -227,7 +227,112 @@
       color: var(--muted);
       line-height: 1.5;
     }
-
+/* Estilo inspirado en formato IEEE para una presentación académica */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #2c3e4f;
+        }
+        .ieee-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px 35px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            line-height: 1.45;
+        }
+        /* Encabezado tipo IEEE */
+        .header-ieee {
+            text-align: center;
+            border-bottom: 2px solid #004b7c;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+        }
+        .header-ieee h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: #004b7c;
+            font-weight: normal;
+            letter-spacing: -0.5px;
+        }
+        .header-ieee p {
+            margin: 5px 0 0;
+            font-style: italic;
+            color: #2c3e4f;
+        }
+        /* Secciones y títulos */
+        h2 {
+            font-size: 1.4rem;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            color: #004b7c;
+            border-left: 4px solid #004b7c;
+            padding-left: 12px;
+            font-weight: normal;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px;
+            color: #1e4663;
+            font-weight: 500;
+        }
+        .sub {
+            font-weight: bold;
+            color: #005a9c;
+        }
+        /* Ecuaciones */
+        .equation {
+            font-family: monospace;
+            background-color: #f4f6f9;
+            padding: 8px 12px;
+            border-left: 3px solid #004b7c;
+            margin: 18px 0;
+            font-size: 1.05rem;
+            text-align: center;
+            font-weight: 500;
+            overflow-x: auto;
+        }
+        .inline-equation {
+            font-family: monospace;
+            background-color: #f0f2f5;
+            padding: 2px 6px;
+            border-radius: 5px;
+            font-size: 0.95rem;
+        }
+        /* Listas y citas */
+        ul, ol {
+            margin: 12px 0 15px 25px;
+        }
+        li {
+            margin: 6px 0;
+        }
+        .note {
+            background-color: #eef4fc;
+            border-left: 4px solid #2c7ab1;
+            padding: 12px 18px;
+            margin: 20px 0;
+            font-style: normal;
+            border-radius: 0 8px 8px 0;
+        }
+        .ieee-footer {
+            margin-top: 30px;
+            font-size: 0.75rem;
+            text-align: center;
+            border-top: 1px solid #ccc;
+            padding-top: 12px;
+            color: #4a627a;
+        }
+        @media (max-width: 600px) {
+            .ieee-container {
+                padding: 18px;
+            }
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
     /* Simulations block */
     .sim-block {
       margin-top: 52px;
@@ -265,7 +370,70 @@
       font-size: 0.78rem;
       color: var(--muted);
     }
-
+   body {
+            font-family: 'Inter', sans-serif;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #004b7c;
+            border-bottom: 2px solid #004b7c;
+            padding-bottom: 12px;
+        }
+        .circuit-container {
+            background: #fafafa;
+            border-radius: 12px;
+            padding: 20px;
+            overflow: auto;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+        }
+        svg {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin: 20px 0;
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        button {
+            background: #004b7c;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        button:hover {
+            background: #003d66;
+        }
+        .info {
+            background: #eef4fc;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 16px;
+            font-size: 0.85rem;
+        }
+        .zoom-info {
+            background: #f1f5f9;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 13px;
+        }
     /* ── SIDEBAR ── */
     .sidebar { position: sticky; top: 28px; }
 

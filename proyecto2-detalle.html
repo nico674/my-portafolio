@@ -51,59 +51,82 @@
           Cada aplicación fue simulada en MultiSim, prototipada en laboratorio y documentada con capturas de osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, comportamiento real del componente y casos de uso en la industria.
         </p>
       </div>
+      <div class="ieee-container">
+    <div class="header-ieee">
+        <h1>Convertidor Corriente-Voltaje y Amplificador de Transimpedancia (TIA)</h1>
+        <p>Fundamento teórico para instrumentación electrónica </p>
+    </div>
 
-      <!-- Circuit mockup (SVG illustration) -->
-      
+    <p>En el diseño de circuitos con amplificadores operacionales es común trabajar primordialmente con señales de voltaje. Sin embargo, muchos sensores reales —como fotodiodos o sensores de humedad— generan o modulan una corriente eléctrica en lugar de un voltaje. Por esta razón, resulta imprescindible contar con un método que permita transformar una corriente en una señal de voltaje para su posterior procesamiento.</p>
 
-      <!-- Applications 
-      <div class="apps-block">
-        <p class="section-label">Contenido desarrollado</p>
-        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Las 6 aplicaciones del libro</h2>
-        <div class="app-list">
-          <div class="app-card">
-            <div class="app-num">1</div>
-            <div>
-              <div class="app-name">Amplificador diferencial de alta impedancia</div>
-              <div class="app-desc">Diseño de etapas de entrada con rechazo de modo común (CMRR &gt; 80 dB) para instrumentación de precisión.</div>
-            </div>
-          </div>
-          <div class="app-card">
-            <div class="app-num">2</div>
-            <div>
-              <div class="app-name">Filtro activo Sallen-Key de segundo orden</div>
-              <div class="app-desc">Implementación paso-bajo y paso-alto con respuesta Butterworth/Chebyshev, análisis de sensibilidad.</div>
-            </div>
-          </div>
-          <div class="app-card">
-            <div class="app-num">3</div>
-            <div>
-              <div class="app-name">Oscilador de cuadratura RC con op-amp</div>
-              <div class="app-desc">Generación de señales senoidales en cuadratura, distorsión THD &lt; 1 %, control de amplitud automático.</div>
-            </div>
-          </div>
-          <div class="app-card">
-            <div class="app-num">4</div>
-            <div>
-              <div class="app-name">Integrador y diferenciador de precisión</div>
-              <div class="app-desc">Circuitos para procesamiento de señal analógica, compensación de offset y análisis de estabilidad.</div>
-            </div>
-          </div>
-          <div class="app-card">
-            <div class="app-num">5</div>
-            <div>
-              <div class="app-name">Convertidor V/I y I/V de 4-20 mA</div>
-              <div class="app-desc">Interfaz para sensores industriales, protección ante cortocircuito y análisis de error de linealidad.</div>
-            </div>
-          </div>
-          <div class="app-card">
-            <div class="app-num">6</div>
-            <div>
-              <div class="app-name">Comparador con histéresis (Schmitt Trigger)</div>
-              <div class="app-desc">Diseño de umbrales ajustables, eliminación de rebotes y aplicación en detección de cruce por cero.</div>
-            </div>
-          </div>
-        </div>
-      </div>-->
+    <h2>Limitaciones de la conversión con una resistencia simple</h2>
+    <p>Aunque la ley de Ohm postula que una resistencia puede realizar esta conversión (<span class="inline-equation">V = I·R</span>), esta solución no es óptima en la práctica debido a dos factores fundamentales:</p>
+    <ul>
+        <li><strong>Ancho de banda limitado:</strong> Una resistencia simple, en presencia de una capacitancia de entrada (inherente al sensor y al cableado), presenta un ancho de banda restringido.</li>
+        <li><strong>Problemas de impedancia:</strong> Para maximizar la transferencia de señal desde una fuente de corriente de alta impedancia (como un fotodiodo), se requiere que la etapa de entrada del convertidor posea una impedancia muy baja, cercana a cero. Una resistencia grande ofrecería una alta impedancia de entrada, lo que resulta contraproducente.</li>
+    </ul>
+
+    <p>Afortunadamente, al incorporar un amplificador operacional ideal es posible controlar tanto la impedancia de entrada como la de salida, logrando una conversión corriente-voltaje mucho más eficiente. Esta configuración se conoce como <strong>Amplificador de Transimpedancia (TIA)</strong>, denominado así porque convierte una corriente en un voltaje en otra parte del circuito, a diferencia de una impedancia convencional donde el voltaje afecta directamente la corriente en el mismo punto.</p>
+
+    <h2>Principio de funcionamiento del TIA</h2>
+    <p>El amplificador de transimpedancia basado en un amplificador operacional puede interpretarse como una extensión del amplificador inversor clásico. Su configuración es la siguiente:</p>
+    <ul>
+        <li>La entrada no inversora (+) se conecta a tierra.</li>
+        <li>Una resistencia de realimentación <span class="inline-equation">R<sub>f</sub></span> se coloca entre la salida y la entrada inversora (−).</li>
+        <li>La corriente de entrada <span class="inline-equation">I<sub>in</sub></span> se inyecta directamente al nodo de la entrada inversora.</li>
+    </ul>
+    <p>La operación del circuito se basa en la <strong>condición de tierra virtual</strong>: el amplificador operacional ajusta su voltaje de salida (<span class="inline-equation">V<sub>out</sub></span>) para que la diferencia de potencial entre sus entradas sea prácticamente nula, manteniendo el nodo de entrada inversora a un potencial constante (cercano a 0 V). En consecuencia, toda la corriente de entrada circula a través de la resistencia de realimentación.</p>
+
+    <div class="note">
+        <strong>📐 Interpretación en dos etapas:</strong> El sistema realiza primero una conversión de voltaje a corriente (implícita) y luego una conversión de corriente a voltaje mediante el operacional y <span class="inline-equation">R<sub>f</sub></span>, garantizando una transformación precisa gracias a la tierra virtual.
+    </div>
+
+    <h2>Relación fundamental y ganancia de transimpedancia</h2>
+    <p>A diferencia de un amplificador de voltaje tradicional cuya ganancia es adimensional (V/V), la ganancia de un TIA se expresa en <strong>ohmios (Ω)</strong>, ya que relaciona una corriente de entrada con un voltaje de salida. Esta relación se conoce como ganancia de transimpedancia:</p>
+    <div class="equation">
+        V<sub>out</sub> = I<sub>in</sub> · R<sub>f</sub>
+    </div>
+    <p>Por ejemplo, si se utiliza <span class="inline-equation">R<sub>f</sub> = 1 MΩ</span>, la ganancia es de <span class="inline-equation">10<sup>6</sup> Ω</span>. En términos prácticos, por cada <span class="inline-equation">1 μA</span> de corriente de entrada se obtiene:</p>
+    <div class="equation">
+        V<sub>out</sub> = 1 V
+    </div>
+
+    <h2>Etapa de multiplicación adicional</h2>
+    <p>En algunos diseños (por ejemplo, propuestos por Newton C. Braga), se añade una etapa adicional con resistencias <span class="inline-equation">R<sub>1</sub></span> y <span class="inline-equation">R<sub>2</sub></span>, modificando la expresión de salida a:</p>
+    <div class="equation">
+        V<sub>o</sub> = - I<sub>in</sub> · R<sub>f</sub> · <span style="font-size:1.1rem;">(</span> (R<sub>1</sub>+R<sub>2</sub>)/R<sub>2</sub> <span style="font-size:1.1rem;">)</span>
+    </div>
+    <p>Si se emplean <span class="inline-equation">R<sub>1</sub> = 90 kΩ</span> y <span class="inline-equation">R<sub>2</sub> = 10 kΩ</span>, entonces:</p>
+    <div class="equation">
+        (R<sub>1</sub>+R<sub>2</sub>)/R<sub>2</sub> = (90+10)/10 = 10
+    </div>
+    <p>Esto multiplica la ganancia total por 10, obteniendo una ganancia total de <span class="inline-equation">10 MΩ</span>.</p>
+
+    <h2>Consideraciones con sensores reactivos (impedancia compleja)</h2>
+    <p>Dependiendo del diseño de los electrodos, el sensor de humedad puede comportarse como una capacitancia variable (<span class="inline-equation">C<sub>s</sub></span>), una resistencia variable (<span class="inline-equation">R<sub>s</sub></span>), o una combinación de ambas (impedancia compleja). En medios dieléctricos, la constante dieléctrica varía significativamente con la humedad, afectando la capacitancia del sensor. La impedancia se modela como:</p>
+    <div class="equation">
+        Z<sub>s</sub> = 1 / (jωC<sub>s</sub>)
+    </div>
+    <p>La corriente que fluye hacia el amplificador de transimpedancia es:</p>
+    <div class="equation">
+        i<sub>s</sub>(t) = v<sub>in</sub>(t) / Z<sub>s</sub> = v<sub>in</sub>(t) · jωC<sub>s</sub>
+    </div>
+    
+    <h3>Compensación de estabilidad</h3>
+    <p>A frecuencias como 100 kHz, la capacitancia asociada a los cables y al propio sensor en la entrada inversora puede generar inestabilidad en el circuito, manifestándose como oscilaciones no deseadas. Para mitigar este efecto, se coloca un pequeño condensador <span class="inline-equation">C<sub>f</sub></span> en paralelo con la resistencia de realimentación <span class="inline-equation">R<sub>f</sub></span>. Esto modifica la función de transferencia del sistema, compensando el efecto de la capacitancia de entrada y garantizando la estabilidad del TIA.</p>
+
+    <div class="note">
+        <strong>✔️ Conclusión práctica:</strong> El amplificador de transimpedancia (TIA) constituye la solución óptima para acondicionar señales provenientes de sensores de corriente de alta impedancia, ofreciendo baja impedancia de entrada, ganancia definida por <span class="inline-equation">R<sub>f</sub></span> y posibilidad de compensación de estabilidad mediante <span class="inline-equation">C<sub>f</sub></span>.
+    </div>
+
+    <div class="ieee-footer">
+        Basado en principios de amplificadores operacionales y conversión corriente-voltaje para instrumentación electrónica, con aplicaciones en sensores de humedad para café y cacao.
+    </div>
+</div>
+<!-- Reemplaza el botón existente -->
+<a href="Proyecto_2_medidor_de_humedad_ (1).pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver documentación completa (PDF)
+</a>
 
       <!-- Simulations -->
       <div class="sim-block">
@@ -112,13 +135,13 @@
         <div class="sim-grid">
           <div class="sim-card">
             <div class="sim-icon"><i class="fas fa-wave-square"></i></div>
-            <div class="sim-title">Simulación LTspice</div>
+            <div class="sim-title">Simulación MultiSim</div>
             <div class="sim-sub">Análisis AC, DC y transitorio de cada circuito</div>
           </div>
           <div class="sim-card">
             <div class="sim-icon"><i class="fas fa-flask"></i></div>
             <div class="sim-title">Prototipado en laboratorio</div>
-            <div class="sim-sub">Validación con componentes reales (LM741, TL071, LM324)</div>
+            <div class="sim-sub">Validación con componentes reales (LM358)</div>
           </div>
           <div class="sim-card">
             <div class="sim-icon"><i class="fas fa-chart-line"></i></div>
