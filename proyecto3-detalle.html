@@ -23,8 +23,8 @@
         Publicación técnica · Electrónica analógica
       </div>
       <h1 class="hero-title">
-        Aplicaciones avanzadas de<br>
-        <span class="hero-highlight">amplificadores operacionales</span>
+        Tutorial de Diseño de PCB y <br>
+        <span class="hero-highlight">Manufactura Digital en EasyEDA</span>
       </h1>
       <div class="hero-meta">
         <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</div>
@@ -43,19 +43,38 @@
 
       <div class="prose">
         <p class="section-label">Descripción del proyecto</p>
-        <h2>Electrónica analógica documentada con rigor editorial</h2>
-        <p>
-          Participé como colaborador técnico en la edición y producción de un libro especializado sobre amplificadores operacionales. Mi rol abarcó desde el diseño y validación de los circuitos hasta la maquetación técnica en LaTeX, garantizando coherencia pedagógica entre teoría y práctica.
-        </p>
-        <p>
-          Cada aplicación fue simulada en LTspice, prototipada en laboratorio y documentada con capturas de osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, comportamiento real del componente y casos de uso en la industria.
+        <h1>Fundamentos y Diseño de PCB</h1>
+        <div class="subtitulo">Medidor de humedad para café y cacao | Liderazgo técnico del proceso</div>
+        
+        <h2>🎯 Resumen ejecutivo</h2>
+        <p>Como <span class="highlight">líder del proceso</span>, dirigí el diseño y la preparación para manufactura de una placa de circuito impreso (PCB) profesional utilizando la plataforma <span class="highlight">EasyEDA</span>, partiendo del esquemático de un proyecto previo de <span class="highlight">medidor de humedad para café y cacao</span>. El objetivo fue producir un diseño optimizado para fabricación industrial en <span class="highlight">JLCPCB</span>, cumpliendo estándares internacionales de calidad, con un presupuesto inicial de 20 USD que se ajustó a 40 USD debido a la cantidad de componentes extendidos necesarios (pines de medición, conectores, circuitos integrados y diodos).</p>
+        
+        <h2>📐 Optimización de área y estrategia de capas</h2>
+        <p>Antes de colocar componentes, definí el tamaño de la PCB considerando que el costo en JLCPCB depende directamente del área. Se estableció un formato de aproximadamente <span class="highlight">70mm x 45mm</span> para aprovechar las tarifas económicas de fabricación masiva. Se implementó un <span class="highlight">plano de tierra sólido (GND Plane)</span> en la capa inferior para minimizar el ruido electromagnético y actuar como disipador de calor, mientras que la capa superior se destinó a señales principales y componentes SMD. Se mantuvo una zona de exclusión de cobre de al menos 0.5mm desde el borde de la placa para evitar daños durante el corte (V-cut), y se verificó que ninguna etiqueta de serigrafía quedara sobre los pads de soldadura siguiendo normas DFM.</p>
+        
+        <h2>📡 Consideraciones de frecuencia (100 kHz)</h2>
+        <p>Aunque 100 kHz no se considera alta frecuencia en RF, en el diseño de PCBs analógicas con amplificadores operacionales TL082/TL084 (GBW ≈ 3 MHz) esta frecuencia exige consideraciones especiales. Se colocaron <span class="highlight">condensadores de desacoplo de 100nF</span> lo más cerca posible de los pines de alimentación (V+ y V-) de cada integrado. Se aplicó la <span class="highlight">regla "3W"</span> para evitar diafonía entre pistas críticas, manteniendo una distancia entre centros de pistas de al menos 3 veces el ancho de la pista. Las resistencias de realimentación se ubicaron extremadamente cerca de los pines del integrado para minimizar la capacitancia parásita en los nodos de entrada, y se utilizó un ancho de pista de señal de 10 mil (0.254 mm) según norma IPC-2221.</p>
+        
+        <h2>📋 Normas internacionales IPC y configuración DRC</h2>
+        <p>Para garantizar un diseño profesional, el proceso se rigió por estándares internacionales de la asociación IPC. Se aplicó la <span class="highlight">IPC-2221</span> para el cálculo de ancho de pista basado en elevación de temperatura permitida (10°C) y separación según voltaje (clearance de 6-10 mil). Se utilizó la <span class="highlight">IPC-7351</span> para el diseño de huellas (footprints), asegurando pads del tamaño exacto para soldadura robusta. Los criterios de aceptación se basaron en la <span class="highlight">IPC-A-610 Clase 2</span> (electrónica de servicio dedicado), que requiere manufactura confiable para uso continuo. Estos parámetros se configuraron en el motor DRC de EasyEDA, incluyendo annular ring mínimo de 5 mil para vías.</p>
+        
+        <h2>🔧 Selección de componentes y justificación técnica</h2>
+        <p>Una decisión crítica de diseño fue la <span class="highlight">sustitución del MCP6022 por el TL082</span>. Mientras que el MCP6022 tiene un límite de voltaje de aproximadamente 5.5V-6V, el TL082 soporta rangos de hasta <span class="highlight">±18V</span>, garantizando seguridad eléctrica y estabilidad al operar con fuentes de ±9V. Se priorizó la alta disponibilidad comercial de componentes para cumplir con el presupuesto, incluyendo amplificadores operacionales TL082/TL084, sensores de humedad, pines de medición y conexión, resistencias, capacitores y diodos. Los componentes se organizaron por agrupación funcional (sensor, procesamiento, salida) y se orientaron en el mismo eje para facilitar la soldadura por reflujo.</p>
+        
+        <h2>📦 Entregables para fabricación y resultado final</h2>
+        <p>Finalizando el ejercicio, se procedió a enviar los archivos necesarios para la fabricación de la placa a JLCPCB: archivos <span class="highlight">GERBER</span> (capas de cobre, máscara de soldadura, serigrafía y borde de corte), <span class="highlight">BOM</span> (Bill of Materials o lista de materiales) y archivo <span class="highlight">Pick & Place</span> (coordenadas para ensamble automatizado). A pesar de que se intentó mantener el circuito por debajo de los 20 USD, el costo total final fue de <span class="highlight">40 USD</span> debido a la gran cantidad de componentes extendidos de vital importancia, entre los que se encontraban pines de medición y conexión, los circuitos integrados y los diodos necesarios para el correcto funcionamiento del medidor de humedad.</p>
+        
+        <hr>
+        
+        <p style="font-size: 0.8rem; color: #64748b; text-align: center; margin-top: 20px;">
+            ✅ Diseño optimizado para manufactura industrial | Estándares IPC-2221, IPC-7351, IPC-A-610 | EasyEDA → JLCPCB
         </p>
       </div>
 
       <!-- Circuit mockup (SVG illustration) -->
-      
-
       <!-- Applications -->
+<!--  
+      
       <div class="apps-block">
         <p class="section-label">Contenido desarrollado</p>
         <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Las 6 aplicaciones del libro</h2>
@@ -103,8 +122,7 @@
             </div>
           </div>
         </div>
-      </div>
-
+      </div>-->
       <!-- Simulations -->
       <div class="sim-block">
         <p class="section-label" style="margin-top:52px;">Metodología</p>
