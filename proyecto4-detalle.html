@@ -59,7 +59,7 @@
 
       <!-- Circuit mockup (SVG illustration) -->
    <div class="circuit-illustration">
-    <img src="Captura de pantalla 2026-05-19 163053.png" alt="Diagrama del circuito generador de señales ECG" width="800" height="400">
+    <img src="img/CircuitoECG.png" alt="Diagrama del circuito generador de señales ECG" width="800" height="400">
 </div>
 <!-- Reemplaza el botón existente -->
 <a href="Circuit ECG.pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
@@ -68,7 +68,16 @@
       <!-- Applications -->
       <div class="apps-block">
         <p class="section-label">Contenido desarrollado</p>
-        
+
+        <p>
+          Como se puede observar en la imagen, la señal ECG se compone de varias ondas características (P, QRS, T) que representan la actividad eléctrica del corazón. En este proyecto, se diseñó un circuito analógico utilizando amplificadores operacionales (LM358) y filtros activos para generar formas de onda que simulan tanto ritmos cardíacos normales como patologías específicas.
+        </p>
+        <!-- señal ECG en osciloscopio -->
+        <div class="circuit-illustration">
+          <img src="img/señalECG osc.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+
+
       </div>
 
       <!-- Simulations -->
@@ -108,14 +117,14 @@
         <h4>Tecnologías y herramientas</h4>
         <div class="tags-wrap">
           <span class="tag">LaTeX</span>
-          <span class="tag">LTspice</span>
+          <span class="tag">MultiSim</span>
           <span class="tag">CircuiTikZ</span>
           <span class="tag">MATLAB</span>
-          <span class="tag orange">LM741</span>
-          <span class="tag orange">TL071</span>
-          <span class="tag orange">LM324</span>
+          <span class="tag orange">LM358</span>
+          <!--<span class="tag orange">TL071</span>
+          <span class="tag orange">LM324</span>-->
           <span class="tag">Osciloscopio</span>
-          <span class="tag">Generador de funciones</span>
+          <span class="tag">(timers 555) configuracion monostable y astable</span>
         </div>
       </div>
 
