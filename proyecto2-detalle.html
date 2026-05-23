@@ -45,11 +45,63 @@
         <p class="section-label">Descripción del proyecto</p>
         <h2>Electrónica analógica documentada con rigor editorial</h2>
         <p>
-         Como líder de este proyecto, dirigí el desarrollo de un prototipo de instrumentación electrónica para laboratorios universitarios aplicando la metodología Lean Startup, lo que representó un cambio estratégico frente a los enfoques de ingeniería tradicionales. Mi labor consistió en coordinar la fase de exploración en laboratorios reales para validar necesidades, así como la conceptualización del Producto Mínimo Viable (MVP): un medidor de humedad para muestras de cacao y café basado en amplificadores operacionales. Bajo mi supervisión, se diseñaron las dos etapas analógicas clave (oscilador de Wien y amplificador de transimpedancia) y se implementó el ciclo iterativo crear-medir-aprender. Mi gestión aseguró que el equipo optimizara recursos y minimizara riesgos técnicos, garantizando que la solución final respondiera efectivamente a las condiciones del entorno real.
+         Como líder de este proyecto, dirigí el desarrollo de un prototipo de instrumentación electrónica para 
+         laboratorios universitarios aplicando la metodología Lean Startup, lo que representó un cambio estratégico 
+         frente a los enfoques de ingeniería tradicionales. Mi labor consistió en coordinar la fase de exploración 
+         en laboratorios reales para validar necesidades, así como la conceptualización del Producto Mínimo Viable 
+         (MVP): un medidor de humedad para muestras de cacao y café basado en amplificadores operacionales. Bajo 
+         mi supervisión, se diseñaron las dos etapas analógicas clave (oscilador de Wien y amplificador de 
+         transimpedancia) y se implementó el ciclo iterativo crear-medir-aprender. Mi gestión aseguró que el equipo 
+         optimizara recursos y minimizara riesgos técnicos, garantizando que la solución final respondiera 
+         efectivamente a las condiciones del entorno real.
         </p>
         <p>
-          Cada aplicación fue simulada en MultiSim, prototipada en laboratorio y documentada con capturas de osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, comportamiento real del componente y casos de uso en la industria.
+          El desarrollo del proyecto se realizó mediante una distribución clara de responsabilidades entre los integrantes del equipo. 
+          Daniel Felipe Garrido estuvo encargado principalmente del diseño electrónico de pcb y elaboracion del tutorial del siguiente proyecto, Fernando Ramos Chilito 
+          lideró las actividades de montaje, pruebas experimentales y adquisición de mediciones en laboratorio, mientras que Nicolás Gonzales 
+          Vega participó en la validación experimental, documentación técnica y análisis de comportamiento de los circuitos implementados. Esta 
+          organización permitió trabajar simultáneamente en diferentes etapas del proyecto y optimizar el tiempo de desarrollo.
+
+          Como dinámica de trabajo, se implementaron reuniones cortas diarias de aproximadamente 15 minutos, donde cada integrante
+           compartía hallazgos, errores detectados y ajustes realizados tanto en simulación como en hardware. 
+           Esta metodología permitió sincronizar rápidamente los resultados obtenidos en laboratorio con las modificaciones 
+           en los modelos simulados, facilitando la identificación de discrepancias entre teoría y práctica. 
+           Uno de los problemas más relevantes detectados colectivamente fue que la variación del capacitor asociado al 
+           sensor era demasiado pequeña, ocasionando cambios mínimos en la señal y dificultando la medición experimental. 
+           Gracias a la comunicación constante entre los integrantes, se propusieron ajustes en la etapa de amplificación y 
+           en la configuración del oscilador, permitiendo incrementar la sensibilidad del sistema y obtener resultados 
+           medibles. Esta dinámica colaborativa mejoró significativamente la calidad del proyecto final, reduciendo tiempos 
+           de corrección y fortaleciendo el análisis crítico de cada aplicación desarrollada.
         </p>
+        <!-- señal ECG en osciloscopio -->
+        <div class="circuit-illustration">
+          <img src="img/ruido medidor humedad.jpeg" alt="Diagrama del circuito generador de señales ECG" width="400" height="300">
+        <p>evidencia donde habia mucho ruido</p>
+        </div>
+        <p>
+          Mi aporte personal fue decisivo durante la etapa de validación experimental, al detectar que parte de las inconsistencias 
+          observadas entre la simulación y las mediciones reales no provenían únicamente de los componentes activos, sino 
+          también de efectos parásitos introducidos por el propio montaje físico del circuito. Durante las pruebas, identifiqué 
+          que la capacitancia parásita generada por el cableado y la disposición de los componentes estaba afectando la estabilidad 
+          de la señal y disminuyendo considerablemente la sensibilidad del sistema, especialmente en la etapa donde la variación 
+          capacitiva era muy pequeña. A partir de este análisis, propuse reorganizar físicamente el circuito, reducir la longitud de 
+          las conexiones críticas y acercar las etapas de acondicionamiento al sensor para minimizar interferencias y pérdidas. 
+          Tras implementar estas modificaciones, se obtuvo una señal considerablemente más estable y coherente con los resultados
+           teóricos y simulados. Esta intervención permitió mejorar la precisión de las mediciones y fortaleció la confiabilidad 
+           experimental de las aplicaciones desarrolladas en el proyecto. como se observa en las siguientes imágenes, donde se evidencia 
+           la mejora en la señal obtenida en el osciloscopio tras optimizar el montaje físico del circuito.
+        </p>
+        <!-- señal ECG en osciloscopio -->
+        <div class="circuit-illustration">
+          <img src="img/señal sin ruido medidor.jpeg" alt="Diagrama del circuito generador de señales ECG" width="300" height="300">
+        </div>
+        
+        <!-- señal ECG en osciloscopio -->
+        <div class="circuit-illustration">
+          <img src="img/variado C.jpeg" alt="Diagrama del circuito generador de señales ECG" width="300" height="300">
+        <p>ambas imágenes son de variación de la capacitancia</p>
+        </div>
+
       </div>
       <div class="ieee-container">
     <div class="header-ieee">
@@ -123,6 +175,12 @@
         Basado en principios de amplificadores operacionales y conversión corriente-voltaje para instrumentación electrónica, con aplicaciones en sensores de humedad para café y cacao.
     </div>
 </div>
+<p class="section-label" style="margin-top:52px;">Resultados y documentación</p>
+          <p >
+            Cada aplicación fue simulada en MultiSim, prototipada en laboratorio y documentada con capturas de 
+            osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, 
+            como se muestra en el siguiente boton de documentación.
+          </p>
 <!-- Reemplaza el botón existente -->
 <a href="Proyecto_2_medidor_de_humedad_ (1).pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
     <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver documentación completa (PDF)

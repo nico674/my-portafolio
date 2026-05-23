@@ -48,12 +48,97 @@
         Como responsable del equipo, lideré la participación conjunta con José Fernando Ramos Chilito, Daniel Felipe Garrido y Nicolás González Vega (colaborador técnico) en la edición y producción de un libro especializado sobre amplificadores operacionales. Mi labor de coordinación y dirección abarcó desde el diseño y validación de los circuitos hasta la maquetación técnica en LaTeX, garantizando la integridad pedagógica entre teoría y práctica, así como la correcta ejecución de cada fase del proyecto.
         </p>
         <p>
+          Mi contribución personal al proyecto trasciende la coordinación, demostrando un valor excepcional como integrador de sistemas de conocimiento. 
+          La evidencia contundente de mi impacto radica en la creación de un flujo de trabajo reproducible 
+          “LaTeX-MultiSim-Hardware” que estandarizó la coherencia del libro. 
+        </p>
+
+        <p>
+          Como líder del equipo, promoví una dinámica de colaboración simbiótica donde la sinergia entre los miembros fue la piedra angular 
+          del éxito editorial. Implementé una metodología de “autoría por pares rotativos”, emparejando a José Fernando Ramos (especialista en análisis matemático) 
+          con Daniel Felipe Garrido (experto en simulación MultiSim) para garantizar que cada ecuación y calculo tuviera 
+          una contraparte visual validada. Se fomentó la contribución personal mediante sesiones de revisión cruzada, 
+          donde el trabajo de prototipado de Nicolás González Vega era el juez último de la viabilidad de nuestros diseños 
+          teóricos. Un ejemplo clave de esta reflexión sobre la dinámica de equipo fue la reestructuración del cronograma 
+          para acomodar los hallazgos de Nicolás sobre inestabilidades térmicas en el hardware; lejos de ser un retraso, 
+          esta pausa reflexiva cohesionó al grupo en torno a un desafío real de ingeniería, integrando el aprendizaje 
+          empírico de Nicolás en el corazón del manuscrito final.
+        </p>
+
+        <p>
+           Mi intervención fue crítica al detectar una discrepancia fundamental entre la simulación de que elabore y la 
+           teoría de José: identifiqué que el modelo macro de MultiSim para el amplificador operacional no contemplaba 
+           correctamente el efecto de la carga en lazo abierto. Al mediar este hallazgo y proponer una prueba de 
+           estrés en hardware con Nicolás, no solo resolví un tecnicismo, sino que elevé el rigor de toda la publicación, 
+           impactando positivamente la calidad del análisis crítico en las seis aplicaciones desarrolladas.
+  </p>
+        <p>
           Cada aplicación fue simulada en MultiSim, prototipada en laboratorio y documentada con capturas de osciloscopio reales. El resultado es un material de referencia que integra análisis matemático, comportamiento real del componente y casos de uso en la industria.
         </p>
-      </div>
+        <h2>Un puente entre la teoría y la práctica en electrónica(Resultados)</h2>
+        <p>Los resultados finales están documentados con una precisión y exhaustividad que reflejan l
+          a madurez del proceso. El producto tangible es un libro técnico de seis capítulos, cada uno dedicado a 
+          una aplicación avanzada verificada. Para cada una de las seis aplicaciones, los procedimientos se detallan de manera inequívoca: 
+          se incluye la deducción formal de los calculos, el esquemático de simulación en MultiSim, la lista de 
+          materiales, y una comparación de “doble pantalla” donde se yuxtaponen la forma de onda simulada y la 
+          captura real del osciloscopio. El análisis crítico y reflexivo no se limita a validar el éxito, 
+          sino que cuantifica las desviaciones: <p>
+  Por ejemplos, para <strong>Probador de Voltaje de Pinch-off con Op-Amp</strong></strong> se realizó una caracterización dinámica del MOSFET mediante el modo XY del osciloscopio, 
+  sustituyendo la referencia fija de −10 V por una señal diente de sierra de 50 mV generada a 2 kHz, 
+  lo que permitió producir un barrido lineal de la corriente de drenador entre 0 y 10 mA. Para ello, 
+  el Canal 1 del osciloscopio (eje X) se conectó a la compuerta del MOSFET para visualizar 
+  <em>V<sub>GS</sub></em>, mientras que el Canal 2 (eje Y) se conectó a la señal de rampa de entrada 
+  proporcional a <em>I<sub>D</sub></em>. Posteriormente, se activó el modo XY y la función de inversión 
+  en el canal vertical, obteniéndose la curva característica 
+  <em>I<sub>D</sub> = f(V<sub>GS</sub>)</em>, lo que permitió identificar visualmente la región de corte 
+  y el inicio de la zona de saturación. En las figuras 2 y 3 se presentan tanto la curva característica 
+  del MOSFET como el montaje experimental del circuito.
+<p>
+  Como ejemplo de aplicación, <strong>el generador de ancho de pulso programable</strong> se fundamenta en la generación 
+  de una rampa de voltaje lineal mediante la carga de un capacitor con una fuente de corriente constante, 
+  permitiendo obtener una mayor precisión temporal en comparación con los circuitos RC convencionales, 
+  cuya respuesta es exponencial. En este diseño, el temporizador tipo 555 utiliza un umbral interno fijado 
+  en <em>2/3 V<sup>+</sup></em>, mientras que la corriente de carga del capacitor es proporcional al voltaje 
+  de alimentación, logrando que el ancho del pulso dependa únicamente de los componentes pasivos 
+  <em>R</em> y <em>C</em>, y no de variaciones en la fuente de alimentación. Inicialmente, el sistema se 
+  encuentra en reposo con el capacitor descargado y la salida en nivel bajo; posteriormente, un pulso 
+  negativo aplicado al pin de disparo activa el flip-flop interno del 555, liberando el pin de descarga y 
+  llevando la salida a nivel alto. A continuación, los amplificadores operacionales y el transistor trabajan 
+  conjuntamente como una fuente de corriente constante de precisión, regulando la corriente que carga el 
+  capacitor de manera lineal y estable frente a cambios de temperatura o carga. Gracias a este comportamiento, 
+  el circuito puede generar pulsos programables altamente precisos y repetibles, siendo adecuado para sistemas 
+  de temporización y control electrónico de alta confiabilidad. tuvimos problemas con la funte de corriente al no
+  dar el valor esperado, lo solucionamos con una alimentacion mas alta al amplificador operacional, lo que permitió
+   alcanzar el rango de corriente necesario para cargar el capacitor a la velocidad deseada, evidenciando la 
+   importancia de la alimentación en el diseño de fuentes de corriente constante.
+   Durante el desarrollo del proyecto también se identificó la falta de disponibilidad del amplificador operacional de alta velocidad originalmente previsto, 
+  como el THS3491, especializado en aplicaciones de gran ancho de banda y elevado swing de salida. Debido a 
+  que este dispositivo corresponde a un amplificador de retroalimentación de corriente (CFA) de difícil acceso 
+  y alto costo para aplicaciones generales, se optó por sustituirlo por el LM358, un amplificador operacional 
+  comercial de propósito general, fácilmente disponible y capaz de operar con una sola fuente de alimentación. 
+  Aunque el LM358 permitió implementar correctamente el generador de pulsos en rangos de milisegundos y 
+  microsegundos, sus limitaciones en slew rate y ancho de banda reducen la precisión en aplicaciones de pulsos 
+  extremadamente cortos del orden de nanosegundos, escenario donde el THS3491 habría ofrecido un mejor desempeño.
 
+</p>
+
+</p>
+        <p>Para las demás aplicaciones desarrolladas dentro del proyecto, no se presentaron inconvenientes 
+          significativos durante las etapas de diseño, simulación e implementación experimental, gracias a una 
+          adecuada planificación previa y a la correcta selección de componentes electrónicos. Esto permitió que los 
+          circuitos funcionaran de manera estable desde las primeras pruebas, reduciendo considerablemente el tiempo 
+          de depuración y ajuste. Además, la experiencia adquirida en las primeras fases del proyecto facilitó la 
+          optimización de metodologías de análisis, simulación y validación en hardware, logrando resultados 
+          coherentes entre la teoría y la práctica. Como resultado, las diferentes aplicaciones pudieron desarrollarse 
+          de manera eficiente, manteniendo un buen nivel de desempeño, estabilidad y documentación técnica dentro del 
+          portafolio de trabajo.</p>
+</p>
+      </div>
+      <p> acontinuación se presentan las aplicaciones desarrolladas:</p>
       <!-- Circuit mockup (SVG illustration) -->
-      
+      <a href="Libro_electrónica_análoga_3__Copy_.pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver documentación completa (PDF)
+</a>
 
       <!-- Applications -->
       <div class="apps-block">
