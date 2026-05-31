@@ -18,20 +18,20 @@
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
-      <div class="category-pill">
+      <!-- <div class="category-pill">
         <i class="fas fa-book-open"></i>
         Publicación técnica · Electrónica analógica
-      </div>
+      </div> -->
       <h1 class="hero-title">
         Medidor Analogico<br>
         <span class="hero-highlight">de cafe y cacao</span>
       </h1>
-      <div class="hero-meta">
+      <!--<div class="hero-meta">
         <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2026</div>
         <div class="meta-item"><i class="fas fa-users"></i> Organicé al equipo</div>
         <div class="meta-item"><i class="fas fa-microchip"></i> Medidor analogico de humedad</div>
         <div class="meta-item"><i class="fas fa-file-alt"></i> LaTeX · MultiSim · Hardware</div>
-      </div>
+      </div>-->
     </div>
   </section>
 
@@ -42,55 +42,71 @@
     <main>
 
       <div class="prose">
-        <p class="section-label">Descripción del proyecto</p>
-        <h2>Electrónica analógica documentada con rigor editorial</h2>
-        <p>
-         Como líder de este proyecto, dirigí el desarrollo de un prototipo de instrumentación electrónica para 
-         laboratorios universitarios aplicando la metodología Lean Startup, lo que representó un cambio estratégico 
-         frente a los enfoques de ingeniería tradicionales. Mi labor consistió en coordinar la fase de exploración 
-         en laboratorios reales para validar necesidades, así como la conceptualización del Producto Mínimo Viable 
-         (MVP): un medidor de humedad para muestras de cacao y café basado en amplificadores operacionales. Bajo 
-         mi supervisión, se diseñaron las dos etapas analógicas clave (oscilador de Wien y amplificador de 
-         transimpedancia) y se implementó el ciclo iterativo crear-medir-aprender. Mi gestión aseguró que el equipo 
-         optimizara recursos y minimizara riesgos técnicos, garantizando que la solución final respondiera 
-         efectivamente a las condiciones del entorno real.
-        </p>
-        <p>
-          El desarrollo del proyecto se realizó mediante una distribución clara de responsabilidades entre los integrantes del equipo. 
-          Daniel Felipe Garrido estuvo encargado principalmente del diseño electrónico de pcb y elaboracion del tutorial del siguiente proyecto, Fernando Ramos Chilito 
-          lideró las actividades de montaje, pruebas experimentales y adquisición de mediciones en laboratorio, mientras que Nicolás Gonzales 
-          Vega participó en la validación experimental, documentación técnica y análisis de comportamiento de los circuitos implementados. Esta 
-          organización permitió trabajar simultáneamente en diferentes etapas del proyecto y optimizar el tiempo de desarrollo.
-
-          Como dinámica de trabajo, se implementaron reuniones cortas diarias de aproximadamente 15 minutos, donde cada integrante
-           compartía hallazgos, errores detectados y ajustes realizados tanto en simulación como en hardware. 
-           Esta metodología permitió sincronizar rápidamente los resultados obtenidos en laboratorio con las modificaciones 
-           en los modelos simulados, facilitando la identificación de discrepancias entre teoría y práctica. 
-           Uno de los problemas más relevantes detectados colectivamente fue que la variación del capacitor asociado al 
-           sensor era demasiado pequeña, ocasionando cambios mínimos en la señal y dificultando la medición experimental. 
-           Gracias a la comunicación constante entre los integrantes, se propusieron ajustes en la etapa de amplificación y 
-           en la configuración del oscilador, permitiendo incrementar la sensibilidad del sistema y obtener resultados 
-           medibles. Esta dinámica colaborativa mejoró significativamente la calidad del proyecto final, reduciendo tiempos 
-           de corrección y fortaleciendo el análisis crítico de cada aplicación desarrollada.
-        </p>
+        <p class="section-label">Objetivo del proyecto</p> 
+        <h2>Desarrollo de un MVP de instrumentación electrónica para medición de humedad</h2> 
+        <p> El objetivo del proyecto fue desarrollar un prototipo de instrumentación electrónica funcional para 
+          laboratorios universitarios, aplicando la metodología Lean Startup para responder a necesidades reales 
+          identificadas y validadas en campo. El Producto Mínimo Viable (MVP) consistió en un medidor de humedad 
+          para muestras de cacao y café basado en amplificadores operacionales, concebido para ofrecer una solución
+           precisa, de bajo costo y validada experimentalmente en condiciones reales de operación. </p> 
+           <p class="section-label">Alcance</p> 
+           <h2>Desde la exploración del problema hasta la validación experimental</h2> 
+           <p> El proyecto abarcó todas las etapas del ciclo de desarrollo, desde la identificación de necesidades 
+            en entornos reales de laboratorio hasta la validación funcional del prototipo final. Las actividades 
+            incluyeron la caracterización de sensores capacitivos para medición de humedad, el diseño y simulación 
+            de las etapas analógicas principales, la construcción física del sistema y la validación experimental 
+            mediante pruebas repetibles. </p> 
+            <p> Como parte del alcance técnico se desarrolló un oscilador de Wien para excitar el sensor capacitivo 
+              y un amplificador de transimpedancia (TIA) encargado del acondicionamiento de señal. Adicionalmente, 
+              se implementaron ciclos iterativos de crear-medir-aprender para optimizar el desempeño del sistema a 
+              partir de las discrepancias observadas entre simulación y comportamiento real. </p> 
+              <p class="section-label">Metodología de trabajo</p> 
+              <h2>Aplicación de Lean Startup en el desarrollo electrónico</h2> 
+              <p> Se adoptó la filosofía Lean Startup como marco estratégico para el desarrollo del proyecto, 
+                realizando iteraciones cortas centradas en el aprendizaje validado. El trabajo se organizó mediante 
+                una distribución clara de responsabilidades: Daniel Felipe Garrido lideró el diseño de PCB y la 
+                elaboración del tutorial del proyecto, Fernando Ramos Chilito se encargó del montaje experimental y 
+                la adquisición de mediciones, mientras que Nicolás Gonzales Vega asumió la validación experimental, 
+                la documentación técnica y el análisis del comportamiento de los circuitos. </p> 
+                <p> Para garantizar una comunicación efectiva se realizaron reuniones diarias de seguimiento, donde 
+                  cada integrante compartía hallazgos, errores detectados y ajustes realizados tanto en simulación como 
+                  en hardware. Esta dinámica permitió acelerar la retroalimentación entre teoría y práctica, 
+                  facilitando la identificación temprana de discrepancias y la implementación de mejoras continuas en 
+                  el diseño. </p> <p> Un ejemplo representativo de esta metodología fue la detección de que la variación
+                   capacitiva del sensor producía cambios demasiado pequeños en la señal de salida. A partir de este 
+                   hallazgo, el equipo propuso ajustes tanto en la etapa de amplificación como en la configuración del 
+                   oscilador, logrando incrementar la sensibilidad del sistema de forma medible y verificable 
+                   experimentalmente. </p> <p class="section-label">Documentación del proceso</p> 
+                   <h2>Fundamentos, análisis y trazabilidad del desarrollo</h2> 
+                   <p> El proyecto fue documentado de manera exhaustiva, registrando la evolución del diseño, las 
+                    decisiones de ingeniería, los errores identificados y las soluciones implementadas. Una parte 
+                    central de esta documentación correspondió al estudio y diseño del amplificador de transimpedancia 
+                    (TIA), justificando su elección frente a métodos convencionales de conversión corriente-voltaje 
+                    debido a sus ventajas en ancho de banda y estabilidad. </p> 
+                    <p> Se documentó el principio de tierra virtual, la relación fundamental de transimpedancia y la 
+                      incorporación de una etapa multiplicadora de ganancia que permitió alcanzar una ganancia efectiva 
+                      de 10 MΩ. Asimismo, se registró el modelado del sensor de humedad como una impedancia compleja 
+                      dependiente de la capacitancia variable y la frecuencia de excitación. </p> 
+                      <p> También se analizó el riesgo de inestabilidad asociado a las capacitancias parásitas 
+                        presentes a frecuencias cercanas a 100 kHz. Como solución, se documentó la incorporación de un 
+                        condensador de compensación en paralelo con la resistencia de realimentación, garantizando la 
+                        estabilidad del sistema y la repetibilidad de las mediciones. </p>
         <!-- señal ECG en osciloscopio -->
         <div class="circuit-illustration">
           <img src="img/ruido medidor humedad.jpeg" alt="Diagrama del circuito generador de señales ECG" width="400" height="300">
         <p>evidencia donde habia mucho ruido</p>
         </div>
-        <p>
-          Mi aporte personal fue decisivo durante la etapa de validación experimental, al detectar que parte de las inconsistencias 
-          observadas entre la simulación y las mediciones reales no provenían únicamente de los componentes activos, sino 
-          también de efectos parásitos introducidos por el propio montaje físico del circuito. Durante las pruebas, identifiqué 
-          que la capacitancia parásita generada por el cableado y la disposición de los componentes estaba afectando la estabilidad 
-          de la señal y disminuyendo considerablemente la sensibilidad del sistema, especialmente en la etapa donde la variación 
-          capacitiva era muy pequeña. A partir de este análisis, propuse reorganizar físicamente el circuito, reducir la longitud de 
-          las conexiones críticas y acercar las etapas de acondicionamiento al sensor para minimizar interferencias y pérdidas. 
-          Tras implementar estas modificaciones, se obtuvo una señal considerablemente más estable y coherente con los resultados
-           teóricos y simulados. Esta intervención permitió mejorar la precisión de las mediciones y fortaleció la confiabilidad 
-           experimental de las aplicaciones desarrolladas en el proyecto. como se observa en las siguientes imágenes, donde se evidencia 
-           la mejora en la señal obtenida en el osciloscopio tras optimizar el montaje físico del circuito.
-        </p>
+       <p class="section-label">Contribución personal</p> 
+       <h2>Validación experimental y mitigación de efectos parásitos</h2> 
+       <p> Mi contribución fue determinante durante la etapa de validación experimental. Identifiqué que las 
+        discrepancias observadas entre simulación y mediciones reales no provenían únicamente de los componentes 
+        activos, sino también de efectos parásitos introducidos por el montaje físico del circuito. </p> 
+        <p> Detecté que la capacitancia asociada al cableado y a la disposición de los componentes reducía 
+          significativamente la sensibilidad del sistema y afectaba la estabilidad de la señal. 
+          Como respuesta, propuse reorganizar físicamente el circuito, reducir la longitud de las conexiones 
+          críticas y acercar las etapas de acondicionamiento al sensor. Estas modificaciones permitieron obtener 
+          señales más estables y coherentes con las predicciones teóricas, mejorando de forma significativa la 
+          precisión y confiabilidad del prototipo. </p>
         <!-- señal ECG en osciloscopio -->
         <div class="circuit-illustration">
           <img src="img/señal sin ruido medidor.jpeg" alt="Diagrama del circuito generador de señales ECG" width="300" height="300">
@@ -105,75 +121,71 @@
       </div>
       <div class="ieee-container">
     <div class="header-ieee">
-        <h1>Convertidor Corriente-Voltaje y Amplificador de Transimpedancia (TIA)</h1>
-        <p>Fundamento teórico para instrumentación electrónica </p>
+      <p class="section-label">Soluciones implementadas</p> 
+      <h2>Optimización técnica del prototipo</h2>
+         <div class="app-card">
+        <div class="app-num"><i class="fas fa-chart-line"></i></div>
+        <div>
+            <div class="app-name">TIA de alta ganancia</div>
+            <div class="app-desc">
+                Implementación de un amplificador de transimpedancia con ganancia efectiva de 10 MΩ para amplificar las pequeñas variaciones de corriente generadas por el sensor.
+            </div>
+        </div>
     </div>
 
-    <p>En el diseño de circuitos con amplificadores operacionales es común trabajar primordialmente con señales de voltaje. Sin embargo, muchos sensores reales —como fotodiodos o sensores de humedad— generan o modulan una corriente eléctrica en lugar de un voltaje. Por esta razón, resulta imprescindible contar con un método que permita transformar una corriente en una señal de voltaje para su posterior procesamiento.</p>
-
-    <h2>Limitaciones de la conversión con una resistencia simple</h2>
-    <p>Aunque la ley de Ohm postula que una resistencia puede realizar esta conversión (<span class="inline-equation">V = I·R</span>), esta solución no es óptima en la práctica debido a dos factores fundamentales:</p>
-    <ul>
-        <li><strong>Ancho de banda limitado:</strong> Una resistencia simple, en presencia de una capacitancia de entrada (inherente al sensor y al cableado), presenta un ancho de banda restringido.</li>
-        <li><strong>Problemas de impedancia:</strong> Para maximizar la transferencia de señal desde una fuente de corriente de alta impedancia (como un fotodiodo), se requiere que la etapa de entrada del convertidor posea una impedancia muy baja, cercana a cero. Una resistencia grande ofrecería una alta impedancia de entrada, lo que resulta contraproducente.</li>
-    </ul>
-
-    <p>Afortunadamente, al incorporar un amplificador operacional ideal es posible controlar tanto la impedancia de entrada como la de salida, logrando una conversión corriente-voltaje mucho más eficiente. Esta configuración se conoce como <strong>Amplificador de Transimpedancia (TIA)</strong>, denominado así porque convierte una corriente en un voltaje en otra parte del circuito, a diferencia de una impedancia convencional donde el voltaje afecta directamente la corriente en el mismo punto.</p>
-
-    <h2>Principio de funcionamiento del TIA</h2>
-    <p>El amplificador de transimpedancia basado en un amplificador operacional puede interpretarse como una extensión del amplificador inversor clásico. Su configuración es la siguiente:</p>
-    <ul>
-        <li>La entrada no inversora (+) se conecta a tierra.</li>
-        <li>Una resistencia de realimentación <span class="inline-equation">R<sub>f</sub></span> se coloca entre la salida y la entrada inversora (−).</li>
-        <li>La corriente de entrada <span class="inline-equation">I<sub>in</sub></span> se inyecta directamente al nodo de la entrada inversora.</li>
-    </ul>
-    <p>La operación del circuito se basa en la <strong>condición de tierra virtual</strong>: el amplificador operacional ajusta su voltaje de salida (<span class="inline-equation">V<sub>out</sub></span>) para que la diferencia de potencial entre sus entradas sea prácticamente nula, manteniendo el nodo de entrada inversora a un potencial constante (cercano a 0 V). En consecuencia, toda la corriente de entrada circula a través de la resistencia de realimentación.</p>
-
-    <div class="note">
-        <strong>📐 Interpretación en dos etapas:</strong> El sistema realiza primero una conversión de voltaje a corriente (implícita) y luego una conversión de corriente a voltaje mediante el operacional y <span class="inline-equation">R<sub>f</sub></span>, garantizando una transformación precisa gracias a la tierra virtual.
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-wave-square"></i></div>
+        <div>
+            <div class="app-name">Compensación con condensador Cf</div>
+            <div class="app-desc">
+                Incorporación de un condensador de compensación para mejorar la estabilidad y evitar oscilaciones producidas por capacitancias parásitas.
+            </div>
+        </div>
     </div>
 
-    <h2>Relación fundamental y ganancia de transimpedancia</h2>
-    <p>A diferencia de un amplificador de voltaje tradicional cuya ganancia es adimensional (V/V), la ganancia de un TIA se expresa en <strong>ohmios (Ω)</strong>, ya que relaciona una corriente de entrada con un voltaje de salida. Esta relación se conoce como ganancia de transimpedancia:</p>
-    <div class="equation">
-        V<sub>out</sub> = I<sub>in</sub> · R<sub>f</sub>
-    </div>
-    <p>Por ejemplo, si se utiliza <span class="inline-equation">R<sub>f</sub> = 1 MΩ</span>, la ganancia es de <span class="inline-equation">10<sup>6</sup> Ω</span>. En términos prácticos, por cada <span class="inline-equation">1 μA</span> de corriente de entrada se obtiene:</p>
-    <div class="equation">
-        V<sub>out</sub> = 1 V
-    </div>
-
-    <h2>Etapa de multiplicación adicional</h2>
-    <p>En algunos diseños (por ejemplo, propuestos por Newton C. Braga), se añade una etapa adicional con resistencias <span class="inline-equation">R<sub>1</sub></span> y <span class="inline-equation">R<sub>2</sub></span>, modificando la expresión de salida a:</p>
-    <div class="equation">
-        V<sub>o</sub> = - I<sub>in</sub> · R<sub>f</sub> · <span style="font-size:1.1rem;">(</span> (R<sub>1</sub>+R<sub>2</sub>)/R<sub>2</sub> <span style="font-size:1.1rem;">)</span>
-    </div>
-    <p>Si se emplean <span class="inline-equation">R<sub>1</sub> = 90 kΩ</span> y <span class="inline-equation">R<sub>2</sub> = 10 kΩ</span>, entonces:</p>
-    <div class="equation">
-        (R<sub>1</sub>+R<sub>2</sub>)/R<sub>2</sub> = (90+10)/10 = 10
-    </div>
-    <p>Esto multiplica la ganancia total por 10, obteniendo una ganancia total de <span class="inline-equation">10 MΩ</span>.</p>
-
-    <h2>Consideraciones con sensores reactivos (impedancia compleja)</h2>
-    <p>Dependiendo del diseño de los electrodos, el sensor de humedad puede comportarse como una capacitancia variable (<span class="inline-equation">C<sub>s</sub></span>), una resistencia variable (<span class="inline-equation">R<sub>s</sub></span>), o una combinación de ambas (impedancia compleja). En medios dieléctricos, la constante dieléctrica varía significativamente con la humedad, afectando la capacitancia del sensor. La impedancia se modela como:</p>
-    <div class="equation">
-        Z<sub>s</sub> = 1 / (jωC<sub>s</sub>)
-    </div>
-    <p>La corriente que fluye hacia el amplificador de transimpedancia es:</p>
-    <div class="equation">
-        i<sub>s</sub>(t) = v<sub>in</sub>(t) / Z<sub>s</sub> = v<sub>in</sub>(t) · jωC<sub>s</sub>
-    </div>
-    
-    <h3>Compensación de estabilidad</h3>
-    <p>A frecuencias como 100 kHz, la capacitancia asociada a los cables y al propio sensor en la entrada inversora puede generar inestabilidad en el circuito, manifestándose como oscilaciones no deseadas. Para mitigar este efecto, se coloca un pequeño condensador <span class="inline-equation">C<sub>f</sub></span> en paralelo con la resistencia de realimentación <span class="inline-equation">R<sub>f</sub></span>. Esto modifica la función de transferencia del sistema, compensando el efecto de la capacitancia de entrada y garantizando la estabilidad del TIA.</p>
-
-    <div class="note">
-        <strong>✔️ Conclusión práctica:</strong> El amplificador de transimpedancia (TIA) constituye la solución óptima para acondicionar señales provenientes de sensores de corriente de alta impedancia, ofreciendo baja impedancia de entrada, ganancia definida por <span class="inline-equation">R<sub>f</sub></span> y posibilidad de compensación de estabilidad mediante <span class="inline-equation">C<sub>f</sub></span>.
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-project-diagram"></i></div>
+        <div>
+            <div class="app-name">Optimización del montaje físico</div>
+            <div class="app-desc">
+                Reducción de la longitud de conexiones críticas y reorganización del layout para minimizar efectos parásitos.
+            </div>
+        </div>
     </div>
 
-    <div class="ieee-footer">
-        Basado en principios de amplificadores operacionales y conversión corriente-voltaje para instrumentación electrónica, con aplicaciones en sensores de humedad para café y cacao.
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-sliders-h"></i></div>
+        <div>
+            <div class="app-name">Ajuste del oscilador de Wien</div>
+            <div class="app-desc">
+                Modificación de parámetros de excitación y ganancia para incrementar la sensibilidad global del sistema.
+            </div>
+        </div>
     </div>
+
+</div>
+<p class="section-label">Resultados</p>
+<h2>Validación de un sistema funcional de medición de humedad</h2>
+
+<p>
+    Como resultado del proyecto se obtuvo un prototipo de instrumentación electrónica completamente funcional, cuyo
+    comportamiento experimental mostró una elevada coherencia con las predicciones teóricas y los resultados de simulación.
+    La documentación final incluye procedimientos de medición, análisis de estabilidad y validación de desempeño.
+</p>
+
+<p>
+    Las pruebas realizadas confirmaron la efectividad de la compensación implementada mediante el condensador Cf y la
+    reorganización física del circuito, obteniéndose una señal estable y libre de oscilaciones no deseadas. Asimismo,
+    la ganancia optimizada del amplificador de transimpedancia permitió detectar pequeñas variaciones de humedad en
+    muestras de café y cacao con suficiente sensibilidad para aplicaciones académicas y de laboratorio.
+</p>
+
+<p>
+    El análisis crítico de los resultados permitió concluir que la integración de la metodología Lean Startup con un
+    proceso riguroso de diseño electrónico aceleró el aprendizaje, facilitó la resolución de problemas reales y elevó
+    la calidad técnica del producto final. Como resultado, el proyecto dejó una base documental sólida y reproducible
+    para futuras investigaciones y desarrollos de instrumentación electrónica aplicada.
+</p>
 </div>
 <p class="section-label" style="margin-top:52px;">Resultados y documentación</p>
           <p >
@@ -187,92 +199,14 @@
 </a>
 
       <!-- Simulations -->
-      <div class="sim-block">
-        <p class="section-label" style="margin-top:52px;">Metodología</p>
-        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Proceso de validación</h2>
-        <div class="sim-grid">
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-wave-square"></i></div>
-            <div class="sim-title">Simulación MultiSim</div>
-            <div class="sim-sub">Análisis AC, DC y transitorio de cada circuito</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-flask"></i></div>
-            <div class="sim-title">Prototipado en laboratorio</div>
-            <div class="sim-sub">Validación con componentes reales (LM358)</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="sim-title">Capturas de osciloscopio</div>
-            <div class="sim-sub">Evidencia fotográfica de respuesta en frecuencia y transitoria</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-file-code"></i></div>
-            <div class="sim-title">Maquetación en LaTeX</div>
-            <div class="sim-sub">Ecuaciones, esquemáticos (CircuiTikZ) y gráficos vectoriales</div>
-          </div>
-        </div>
-      </div>
+      
 
     </main>
 
     <!-- SIDEBAR -->
     <aside class="sidebar">
 
-      <div class="side-card">
-        <h4>Tecnologías y herramientas</h4>
-        <div class="tags-wrap">
-          <span class="tag">LaTeX</span>
-          <span class="tag">MultiSim</span>
-          <span class="tag">CircuiTikZ</span>
-          <span class="tag">MATLAB</span>
-          <!--<span class="tag orange">LM741</span>-->
-          <span class="tag orange">TL071</span>
-          <span class="tag orange">LM324</span>
-          <span class="tag">Osciloscopio</span>
-          <span class="tag">Oscilador de wien</span>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h4>Datos del proyecto</h4>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-book"></i></div>
-          <div>
-            <div class="stat-label">Tipo</div>
-            <div class="stat-val">Publicación técnica</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
-          <div>
-            <div class="stat-label">Aplicaciones</div>
-            <div class="stat-val"> instrumentación electrónica</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-user-edit"></i></div>
-          <div>
-            <div class="stat-label">Rol</div>
-            <div class="stat-val">Líder del proyecto</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-calendar"></i></div>
-          <div>
-            <div class="stat-label">Año</div>
-            <div class="stat-val">2026</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h4>¿Te interesa colaborar?</h4>
-        <a href="index.html#contacto" class="cta-btn">
-          <i class="fas fa-envelope" style="margin-right:8px;"></i>Escribir a Nicolas
-        </a>
-      
-      </div>
+   
 
     </aside>
 

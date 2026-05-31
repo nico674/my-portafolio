@@ -18,20 +18,20 @@
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
-      <div class="category-pill">
+     <!-- <div class="category-pill">
         <i class="fas fa-book-open"></i>
         Publicación técnica · Electrónica analógica
-      </div>
+      </div>-->
       <h1 class="hero-title">
         Tutorial de Diseño de PCB y <br>
         <span class="hero-highlight">Manufactura Digital en EasyEDA</span>
       </h1>
-      <div class="hero-meta">
+    <!--<div class="hero-meta">
         <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</div>
         <div class="meta-item"><i class="fas fa-users"></i> Colaboración editorial</div>
         <div class="meta-item"><i class="fas fa-microchip"></i> 6 aplicaciones desarrolladas</div>
         <div class="meta-item"><i class="fas fa-file-alt"></i> LaTeX · LTspice · Hardware</div>
-      </div>
+      </div>-->
     </div>
   </section>
 
@@ -50,75 +50,191 @@
         Medidor de humedad para café y cacao | Liderazgo técnico del proceso
     </div>
 
-    <h2>🎯 Resumen ejecutivo</h2>
-    
+    <p class="section-label">Objetivo del proyecto</p>
+<h2>Diseño industrial de una PCB para instrumentación electrónica</h2>
+
 <p>
-    Como <span class="highlight">líder del proceso</span>, organicé y dividí el equipo de trabajo para coordinar las pruebas de laboratorio y la validación funcional del sistema de medición de humedad para café y cacao. Esta estrategia permitió desarrollar tareas en paralelo: mientras 
-    <span class="highlight">Daniel Felipe Garrido</span> avanzaba en el ruteo y diseño de la PCB en 
-    <span class="highlight">EasyEDA</span>, yo realizaba pruebas de estabilidad, validación de señal y análisis del comportamiento de la etapa analógica, reportando resultados en tiempo real para optimizar continuamente el diseño. Gracias a esta metodología colaborativa, fue posible iterar y mejorar la etapa de amplificación en menos de 48 horas, logrando un diseño más estable y confiable para manufactura industrial. El proyecto consistió en la preparación y optimización de una placa de circuito impreso (PCB) profesional basada en el esquemático de un 
-    <span class="highlight">medidor de humedad para café y cacao</span>, orientado a fabricación en 
-    <span class="highlight">JLCPCB</span> bajo estándares internacionales de calidad. Aunque inicialmente se planteó un presupuesto de 20 USD, el costo final alcanzó aproximadamente 
-    <span class="highlight">40 USD</span> debido a la incorporación de componentes extendidos esenciales, como pines de medición, conectores, circuitos integrados y diodos specializados.
-   <div class="circuit-illustration">
+    El objetivo del proyecto fue diseñar, optimizar y preparar para manufactura industrial una placa de circuito impreso
+    (PCB) profesional para el medidor de humedad de café y cacao, garantizando el cumplimiento de estándares internacionales
+    IPC, la estabilidad eléctrica del sistema operando a 100 kHz y la viabilidad económica de fabricación. Esta fase fue
+    desarrollada bajo mi liderazgo técnico, coordinando simultáneamente las actividades de validación experimental y diseño
+    electrónico para acelerar el ciclo de mejora del producto.
+</p>
+
+ <div class="circuit-illustration">
           <img src="img/medidor humedad.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
         <p>Imagen del diseño final del medidor de humedad para café y cacao</p>
         </div>
-  </p>
 
+<p class="section-label">Alcance</p>
+<h2>Desde el diseño electrónico hasta la fabricación industrial</h2>
 
-    <h2>📐 Optimización de área y estrategia de capas</h2>
-    
-    <p>
-        Antes de colocar componentes, se definió el tamaño de la PCB considerando que el costo en JLCPCB depende directamente del área. Se estableció un formato aproximado de 
-        <span class="highlight">70 mm × 45 mm</span> para aprovechar las tarifas económicas de fabricación masiva. Se implementó un 
-        <span class="highlight">plano de tierra sólido (GND Plane)</span> en la capa inferior para minimizar el ruido electromagnético y actuar como disipador de calor, mientras que la capa superior se destinó a señales principales y componentes SMD. Se mantuvo una zona de exclusión de cobre de al menos 
-        <span class="highlight">0.5 mm</span> desde el borde de la placa para evitar daños durante el corte (V-cut), verificando además que ninguna etiqueta de serigrafía quedara sobre los pads de soldadura siguiendo criterios DFM.
-    </p>
+<p>
+    El alcance de esta etapa comprendió la definición de la arquitectura física de la PCB, la configuración de reglas
+    de diseño basadas en estándares internacionales IPC y la preparación de toda la documentación necesaria para
+    manufactura industrial.
+</p>
 
-    <h2>📡 Consideraciones de frecuencia (100 kHz)</h2>
-    
-    <p>
-        Aunque 100 kHz no se considera alta frecuencia en aplicaciones RF, en el diseño de PCBs analógicas con amplificadores operacionales TL082/TL084 (GBW ≈ 3 MHz) esta frecuencia exige consideraciones especiales. Se colocaron 
-        <span class="highlight">condensadores de desacoplo de 100 nF</span> lo más cerca posible de los pines de alimentación (V+ y V-) de cada integrado. Se aplicó la 
-        <span class="highlight">regla “3W”</span> para evitar diafonía entre pistas críticas, manteniendo una distancia entre centros de pistas de al menos tres veces el ancho de la pista. Las resistencias de realimentación se ubicaron extremadamente cerca de los pines del integrado para minimizar capacitancias parásitas en los nodos de entrada, y se utilizó un ancho de pista de señal de 
-        <span class="highlight">10 mil (0.254 mm)</span> según la norma IPC-2221.
-    </p>
+<p>
+    Se definió un formato compacto de 70 mm × 45 mm, utilizando una estrategia de dos capas donde la capa superior
+    aloja señales y componentes SMD, mientras que la capa inferior funciona como un plano de tierra sólido para reducir
+    ruido e incrementar la estabilidad del sistema. Asimismo, se desarrollaron los archivos de fabricación GERBER,
+    la lista de materiales (BOM) y el archivo Pick & Place requeridos para ensamblaje automatizado en JLCPCB.
+</p>
 
-    <h2>📋 Normas internacionales IPC y configuración DRC</h2>
-    
-    <p>
-        Para garantizar un diseño profesional, el proceso se rigió por estándares internacionales de la asociación IPC. Se aplicó la 
-        <span class="highlight">IPC-2221</span> para el cálculo del ancho de pista basado en elevación de temperatura permitida (10 °C) y separación según voltaje (clearance de 6-10 mil). También se utilizó la 
-        <span class="highlight">IPC-7351</span> para el diseño de huellas (footprints), asegurando pads con dimensiones adecuadas para soldadura robusta. Los criterios de aceptación se basaron en la 
-        <span class="highlight">IPC-A-610 Clase 2</span> (electrónica de servicio dedicado), orientada a manufactura confiable para uso continuo. Todos estos parámetros fueron configurados en el motor DRC de EasyEDA, incluyendo un annular ring mínimo de 
-        <span class="highlight">5 mil</span> para vías.
-    </p>
+<p>
+    El proyecto también contempló la selección y justificación técnica de componentes, la aplicación de prácticas
+    de diseño para señales analógicas de 100 kHz y la gestión presupuestaria necesaria para garantizar la viabilidad
+    del prototipo final.
+</p>
 
-    <h2>🔧 Selección de componentes y justificación técnica</h2>
-    
-    <p>
-        Una decisión crítica del diseño fue la 
-        <span class="highlight">sustitución del MCP6022 por el TL082</span>. Mientras que el MCP6022 posee un límite de voltaje aproximado de 5.5 V a 6 V, el TL082 soporta rangos de hasta 
-        <span class="highlight">±18 V</span>, garantizando mayor seguridad eléctrica y estabilidad al trabajar con fuentes de ±9 V. Se priorizó la disponibilidad comercial de los componentes para mantener viabilidad económica y facilidad de ensamblaje, incluyendo amplificadores operacionales TL082/TL084, sensores de humedad, pines de medición y conexión, resistencias, capacitores y diodos. Los componentes fueron organizados por agrupación funcional (sensor, procesamiento y salida) y alineados en el mismo eje para facilitar procesos de soldadura por reflujo y mantenimiento.
-    </p>
+<p class="section-label">Metodología de trabajo</p>
+<h2>Diseño concurrente y validación en tiempo real</h2>
 
-    <h2>🧪 Coordinación de pruebas y validación experimental</h2>
-    
-    <p>
-        Durante el desarrollo del proyecto, se realizaron pruebas de laboratorio orientadas a validar el comportamiento eléctrico del sistema de medición de humedad, verificar estabilidad de señal y comprobar la respuesta de las etapas analógicas antes de la fabricación definitiva de la PCB. La coordinación de estas pruebas permitió ajustar criterios de diseño, selección de componentes y distribución electrónica para mejorar el rendimiento general del dispositivo y garantizar que el diseño final realizado por 
-        <span class="highlight">Daniel Felipe Garrido</span> cumpliera los requisitos técnicos del proyecto.
-    </p>
+<p>
+    Organicé al equipo bajo una estrategia de trabajo simultáneo que permitió reducir significativamente los tiempos
+    de desarrollo. Mientras Daniel Felipe Garrido se concentraba en el ruteo y diseño de la PCB utilizando EasyEDA,
+    asumí en paralelo las pruebas de estabilidad, validación de señal y análisis del comportamiento de la etapa
+    analógica del sistema.
+</p>
 
-    <h2>📦 Entregables para fabricación y resultado final</h2>
-    
-    <p>
-        Finalizando el ejercicio, se prepararon y enviaron los archivos necesarios para la fabricación de la placa a 
-        <span class="highlight">JLCPCB</span>: archivos 
-        <span class="highlight">GERBER</span> (capas de cobre, máscara de soldadura, serigrafía y borde de corte), 
-        <span class="highlight">BOM</span> (Bill of Materials o lista de materiales) y archivo 
-        <span class="highlight">Pick & Place</span> (coordenadas para ensamblaje automatizado). Aunque inicialmente se buscó mantener el proyecto por debajo de los 20 USD, el costo final alcanzó los 
-        <span class="highlight">40 USD</span> debido a la inclusión de componentes extendidos fundamentales, entre ellos pines de medición y conexión, circuitos integrados y diodos requeridos para el correcto funcionamiento del medidor de humedad.
-    </p>
+<p>
+    Los resultados obtenidos en laboratorio eran comunicados en tiempo real, permitiendo iteraciones rápidas sobre
+    el diseño de la etapa de amplificación y optimizaciones aplicadas en menos de 48 horas. Esta dinámica redujo el
+    tiempo de maduración del diseño y permitió detectar problemas potenciales antes de la fabricación.
+</p>
+
+<p>
+    Desde las primeras etapas se aplicaron criterios DFM (Design for Manufacturing), incorporando restricciones de
+    exclusión de cobre en bordes, verificación de serigrafías fuera de pads, alineación funcional de componentes y
+    configuración completa de reglas DRC basadas en normas IPC para asegurar un diseño listo para producción industrial.
+</p>
+
+<p class="section-label">Documentación del proceso</p>
+<h2>Diseño respaldado por normas internacionales</h2>
+
+<p>
+    Todo el proceso de diseño fue documentado exhaustivamente, registrando cada decisión técnica y su correspondiente
+    justificación normativa. Se documentó la optimización del tamaño de la placa, la utilización de un plano de tierra
+    sólido para minimizar ruido electromagnético y mejorar la disipación térmica, así como la distribución estratégica
+    de señales y componentes.
+</p>
+
+<p>
+    Para garantizar un comportamiento estable a 100 kHz se incorporaron condensadores de desacoplo de 100 nF próximos
+    a los pines de alimentación de cada integrado, se aplicó la regla 3W para minimizar diafonía entre pistas y se
+    ubicaron las resistencias de realimentación inmediatamente adyacentes a los pines del operacional para reducir
+    capacitancias parásitas.
+</p>
+
+<p>
+    La documentación incluyó además la aplicación de las normas IPC-2221 para cálculo de anchos de pista y separación
+    eléctrica, IPC-7351 para el diseño de huellas de componentes y los criterios de aceptación IPC-A-610 Clase 2 para
+    electrónica de servicio dedicado. Finalmente, se registró la preparación de todos los entregables de fabricación
+    requeridos por JLCPCB.
+</p>
+
+<p class="section-label">Contribución personal</p>
+<h2>Liderazgo técnico y toma de decisiones de ingeniería</h2>
+
+<p>
+    Mi contribución principal consistió en liderar integralmente el proceso de diseño de la PCB, coordinando las
+    actividades de validación experimental y desarrollo del layout de manera simultánea. Esta organización permitió
+    que las pruebas de estabilidad y el diseño físico avanzaran en paralelo, acelerando significativamente el ciclo
+    de optimización del proyecto.
+</p>
+
+<p>
+    Realicé personalmente las pruebas de comportamiento de la etapa analógica y reporté los hallazgos obtenidos en
+    laboratorio para retroalimentar el diseño de la PCB. Además, tomé la decisión técnica de sustituir el amplificador
+    operacional MCP6022 por el TL082, justificando esta elección por su compatibilidad con fuentes de ±9 V, su mayor
+    margen operativo y su disponibilidad comercial.
+</p>
+
+<p>
+    También gestioné el incremento presupuestario de 20 USD a 40 USD, documentando de manera transparente la necesidad
+    de incorporar componentes extendidos indispensables para la funcionalidad real del medidor de humedad, garantizando
+    un equilibrio adecuado entre desempeño técnico y viabilidad económica.
+</p>
+
+<p class="section-label">Soluciones implementadas</p>
+<h2>Optimización del diseño para manufactura y estabilidad</h2>
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-microchip"></i></div>
+        <div>
+            <div class="app-name">Sustitución del MCP6022 por TL082</div>
+            <div class="app-desc">
+                Se garantizó operación segura con alimentación de ±9 V, mejorando robustez eléctrica y disponibilidad comercial.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-layer-group"></i></div>
+        <div>
+            <div class="app-name">Plano de tierra sólido</div>
+            <div class="app-desc">
+                Implementación de una capa inferior dedicada a GND para reducir ruido electromagnético y mejorar la estabilidad.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-wave-square"></i></div>
+        <div>
+            <div class="app-name">Diseño optimizado para 100 kHz</div>
+            <div class="app-desc">
+                Uso de desacoplo local, regla 3W y minimización de la realimentación para preservar la estabilidad del sistema.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-check-circle"></i></div>
+        <div>
+            <div class="app-name">Cumplimiento normativo IPC</div>
+            <div class="app-desc">
+                Configuración de reglas DRC y DFM conforme a IPC-2221, IPC-7351 e IPC-A-610 Clase 2.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-industry"></i></div>
+        <div>
+            <div class="app-name">Preparación para manufactura</div>
+            <div class="app-desc">
+                Generación completa de archivos GERBER, BOM y Pick & Place listos para fabricación industrial.
+            </div>
+        </div>
+    </div>
+
+</div>
+<p class="section-label">Resultados</p>
+<h2>PCB lista para producción industrial</h2>
+
+<p>
+    Como resultado del proyecto se obtuvo una PCB profesional de 70 mm × 45 mm optimizada tanto desde el punto de
+    vista técnico como económico. El diseño final cumplió con todos los criterios DRC y DFM establecidos, garantizando
+    una fabricación libre de errores y compatible con procesos industriales de ensamblaje.
+</p>
+
+<p>
+    Las pruebas de laboratorio confirmaron la estabilidad de las etapas analógicas, verificando que el comportamiento
+    experimental coincidía con los parámetros esperados después de las optimizaciones realizadas durante el proceso
+    de diseño. La implementación del plano de tierra, los condensadores de desacoplo y las reglas de distribución
+    de señales contribuyeron significativamente a la calidad del resultado final.
+</p>
+
+<p>
+    Se generaron exitosamente los archivos GERBER, BOM y Pick & Place listos para envío a JLCPCB, junto con una
+    documentación técnica completa que respalda cada decisión de diseño, desde la selección de componentes hasta
+    la aplicación de estándares IPC. Como resultado, el proyecto dejó una metodología replicable para futuros
+    desarrollos de instrumentación electrónica orientados a manufactura profesional.
+</p>
+<a href="Guía de Diseño de PCB y Manufactura Digital - Proyecto 3 V2 (2).pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver documentación completa (PDF)
+</a>
 
     <hr>
 
@@ -180,60 +296,12 @@
         </div>
       </div>-->
       <!-- Simulations -->
-      <div class="sim-block">
-        <p class="section-label" style="margin-top:52px;">Metodología</p>
-        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Proceso de validación</h2>
-        <div class="sim-grid">
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-wave-square"></i></div>
-            <div class="sim-title">Simulación LTspice</div>
-            <div class="sim-sub">Análisis AC, DC y transitorio de cada circuito</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-flask"></i></div>
-            <div class="sim-title">Prototipado en laboratorio</div>
-            <div class="sim-sub">Validación con componentes reales (LM741, TL071, LM324)</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="sim-title">Capturas de osciloscopio</div>
-            <div class="sim-sub">Evidencia fotográfica de respuesta en frecuencia y transitoria</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-file-code"></i></div>
-            <div class="sim-title">Maquetación en LaTeX</div>
-            <div class="sim-sub">Ecuaciones, esquemáticos (CircuiTikZ) y gráficos vectoriales</div>
-          </div>
-        </div>
-      </div>
+    
 
     </main>
 
     <!-- SIDEBAR -->
-    <aside class="sidebar">
-
-      <div class="side-card">
-        <h4>Tecnologías y herramientas</h4>
-        <div class="tags-wrap">
-          <span class="tag">LaTeX</span>
-         <!-- <span class="tag">LTspice</span> -->
-          <span class="tag">CircuiTikZ</span>
-          <!--<span class="tag">MATLAB</span>-->
-         <!-- <span class="tag orange">LM741</span> -->
-          <span class="tag">Easyeda</span>
-          <span class="tag">Visualización 3d de Easyeda</span>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h4>Datos del proyecto</h4>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-book"></i></div>
-          <div>
-            <div class="stat-label">Tipo</div>
-            <div class="stat-val">Tutorial</div>
-          </div>
-        </div>
+   
         <!--<div class="stat-row">
           <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
           <div>
@@ -241,22 +309,7 @@
             <div class="stat-val">preconsevir</div>
           </div>
         </div>-->
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-user-edit"></i></div>
-          <div>
-            <div class="stat-label">Rol</div>
-            <div class="stat-val">Coautor & editor técnico</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-calendar"></i></div>
-          <div>
-            <div class="stat-label">Año</div>
-            <div class="stat-val">2026</div>
-          </div>
-        </div>
-      </div>
-
+       <!---
       <div class="side-card">
         <h4>¿Te interesa colaborar?</h4>
         <a href="index.html#contacto" class="cta-btn">
@@ -264,7 +317,7 @@
         </a>
        
       </div>
-
+--->
     </aside>
 
   </div>
@@ -278,6 +331,8 @@
       }
     });
   </script>
+
+
 
 </body>
 </html>
