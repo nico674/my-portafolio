@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="proyecto1.css">
     </head>
 
-
+<body>
   <a class="back-btn" href="index.html" id="backBtn">
     <i class="fas fa-arrow-left"></i> Volver al portafolio
   </a>
@@ -18,20 +18,20 @@
     <div class="hero-bg"></div>
     <div class="hero-glow"></div>
     <div class="hero-content">
-      <div class="category-pill">
+      <!-- <div class="category-pill">
         <i class="fas fa-book-open"></i>
         Publicación técnica · Electrónica analógica
-      </div>
+      </div> -->
       <h1 class="hero-title">
         Simulador Analógico <br>
         <span class="hero-highlight">de ECG</span>
       </h1>
-      <div class="hero-meta">
+      <!-- <div class="hero-meta">
         <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2026</div>
         <div class="meta-item"><i class="fas fa-users"></i> Colaboración editorial</div>
         <div class="meta-item"><i class="fas fa-microchip"></i> Bioingenieria</div>
         <div class="meta-item"><i class="fas fa-file-alt"></i> Diseño · multisim · Hardware</div>
-      </div>
+      </div> -->
     </div>
   </section>
 
@@ -43,28 +43,205 @@
 
       <div class="prose">
       <p class="section-label">Descripción del proyecto</p>
-<h2>Simulación y análisis de señales ECG y anomalías cardíacas</h2>
+<p class="section-label">Objetivo del proyecto</p>
+<h2>Diseño e implementación de un sintetizador analógico de señal ECG</h2>
+
 <p>
-  Participé como diseñador en el desarrollo de un sistema de simulación de señales electrocardiográficas (ECG) orientado al diagnóstico de anomalías cardíacas. Mi rol abarcó el modelado de formas de onda patológicas, el diseño de circuitos acondicionadores de biopotenciales y la validación mediante simulación y prototipado real.
-</p>
-<p>
-  <strong>Señales implementadas:</strong> ritmo sinusal normal, taquicardia ventricular, fibrilación auricular, bradicardia sinusal, T-invertida
-</p>
-<p>
-  <strong>Etapas del sistema:</strong> amplificadores LM358, 4 filtros en configuracion de salley-key 3 de segundo orden 1 de orden uno, un generador de pulsos de 1Hz hecho con 1 555 en astable y dos en modo monoestable para generar los picos R y T.
-</p>
-<p>
-  Cada anomalía fue modelada matemáticamente, simulada en multisim y reproducida mediante generador de funciones arbitrarias, documentando capturas de osciloscopio y análisis espectral. El resultado es un banco de pruebas funcional que permite entrenar sistemas de detección automática y estudiar patrones patológicos sin equipos clínicos, integrando teoría bioeléctrica, instrumentación analógica y validación experimental.
+    El objetivo central del proyecto fue diseñar, implementar y validar un prototipo funcional de sintetizador analógico
+    de señal ECG, tomando como base un modelo conceptual previamente definido para representar las subondas P, Q, R, S y T.
+    Se buscó generar una señal electrocardiográfica periódica, estable y ajustable, con capacidad para representar diversas
+    anomalías cardíacas mediante el control de amplitud y temporización, garantizando además una documentación técnica
+    completa que respaldara su operación, validación y posible fabricación profesional.
 </p>
 
-      <!-- Circuit mockup (SVG illustration) -->
-   <div class="circuit-illustration">
-    <img src="img/CircuitoECG.png" alt="Diagrama del circuito generador de señales ECG" width="800" height="400">
-</div>
+<p class="section-label">Alcance</p>
+<h2>Desarrollo integral de un generador analógico de señales biomédicas</h2>
+
+<p>
+    El alcance del proyecto comprendió el diseño, integración y validación de todos los bloques funcionales necesarios
+    para la generación de una señal ECG completa. La arquitectura incluyó una etapa generadora de ritmo encargada de
+    establecer la frecuencia cardíaca base y sincronizar las distintas subondas que conforman el ciclo cardíaco.
+</p>
+
+<p>
+    Se desarrollaron conformadores independientes para la onda P, el complejo QRS y la onda T, incorporando etapas de
+    filtrado y acondicionamiento analógico específicas para cada segmento. Asimismo, se implementaron controles de
+    amplitud y temporización mediante elementos ajustables, permitiendo modificar parámetros clave de la señal para
+    representar condiciones fisiológicas y patológicas.
+</p>
+
+<p>
+    El sistema fue complementado con un circuito sumador encargado de integrar las diferentes subondas en una única
+    señal ECG de salida. Finalmente, se generó la documentación técnica correspondiente, incluyendo esquemáticos,
+    diseño de PCB, lista de materiales y un manual básico de operación.
+</p>
+
+<p class="section-label">Metodología de trabajo</p>
+<h2>Validación progresiva e integración por bloques</h2>
+
+<p>
+    Como líder del equipo, coordiné todas las etapas del proyecto, desde la definición de la arquitectura hasta la
+    validación experimental en laboratorio. La estrategia de desarrollo se basó en una metodología de verificación
+    progresiva, donde cada bloque funcional fue evaluado individualmente antes de integrarse al sistema completo.
+</p>
+ <div class="circuit-illustration">
+          <img src="img/señalECG osc.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+<p>
+    Inicialmente se verificó la correcta generación de la onda ECG normal, validando la secuencia completa de las
+    subondas P-QRS-T y comprobando la estabilidad de la frecuencia cardíaca base. Una vez alcanzado este objetivo,
+    se procedió a implementar y evaluar las anomalías cardíacas previstas, verificando el correcto funcionamiento de
+    todos los modos de operación.
+</p>
+<div class="circuit-illustration">
+          <img src="img/ecgcompleto.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+<p>
+    La dinámica de trabajo se sustentó en la especialización por bloques y en sesiones periódicas de integración,
+    donde cada avance era contrastado con la base de tiempo común. Esta metodología permitió identificar rápidamente
+    posibles problemas de sincronización y garantizar un comportamiento coherente de todo el sintetizador.
+</p>
+
+<p class="section-label">Documentación del proceso</p>
+<h2>Evolución del diseño y optimización funcional</h2>
+
+<p>
+    El desarrollo fue documentado de forma estructurada desde las primeras etapas del diseño conceptual hasta la
+    validación final del prototipo. A partir del modelo preliminar se realizaron modificaciones orientadas a mejorar
+    la estabilidad del sistema, reorganizando los bloques funcionales en etapas claramente definidas de generación de
+    ritmo, conformación de subondas, filtrado, control de amplitud y suma de señales.
+</p>
+
+<p>
+    También se documentó la incorporación de mecanismos para la simulación de anomalías cardíacas mediante ajustes de
+    amplitud y temporización, permitiendo obtener trazos correspondientes a distintas condiciones fisiológicas.
+    Durante esta etapa se realizaron múltiples pruebas iterativas para validar la periodicidad, morfología y estabilidad
+    de las señales generadas.
+</p>
+
+<p>
+    Entre los principales desafíos técnicos se encontró la sincronización adecuada entre el complejo QRS y las ondas P
+    y T. Este problema fue solucionado mediante la optimización de los componentes temporizadores de la base de tiempo,
+    logrando una secuencia estable y reproducible durante las pruebas de laboratorio.
+</p>
 <!-- Reemplaza el botón existente -->
 <a href="Circuit ECG.pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
     <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver circuito completo (PDF)
 </a>
+
+   <div class="circuit-illustration">
+    <img src="img/CircuitoECG.png" alt="Diagrama del circuito generador de señales ECG" width="800" height="400">
+</div>
+
+<p class="section-label">Contribución personal</p>
+<h2>Liderazgo técnico y validación experimental</h2>
+
+<p>
+    Mi contribución fue determinante para la coordinación integral del proyecto y la validación experimental del sistema.
+    Diseñé la estrategia de pruebas que permitió verificar inicialmente la generación correcta de la señal ECG normal y,
+    posteriormente, la activación controlada de las anomalías cardíacas implementadas.
+</p>
+
+<p>
+    Realicé personalmente las pruebas de laboratorio, supervisando la interacción entre todos los bloques funcionales
+    y verificando la estabilidad de la señal bajo diferentes configuraciones de operación. Esta intervención directa
+    permitió detectar tempranamente desviaciones en la morfología de la señal y corregirlas antes de avanzar hacia las
+    etapas finales de integración.
+</p>
+
+<p>
+    Gracias a este proceso de validación progresiva fue posible asegurar una transición estable entre la señal normal
+    y los diferentes modos patológicos, incrementando significativamente la confiabilidad global del sintetizador.
+</p>
+
+<p class="section-label">Soluciones implementadas</p>
+<h2>Optimización del sistema y representación de anomalías</h2>
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-project-diagram"></i></div>
+        <div>
+            <div class="app-name">Reorganización del diagrama de bloques</div>
+            <div class="app-desc">
+                Se redefinieron las etapas de generación de ritmo, conformación de subondas, filtrado y suma para mejorar la estabilidad general del sistema.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-heartbeat"></i></div>
+        <div>
+            <div class="app-name">Sistema de simulación de anomalías</div>
+            <div class="app-desc">
+                Incorporación de controles de amplitud y temporización para representar bradicardia, taquicardia y bloqueo de rama.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-vial"></i></div>
+        <div>
+            <div class="app-name">Validación en dos fases</div>
+            <div class="app-desc">
+                Verificación inicial de la señal ECG normal seguida de la evaluación independiente de cada anomalía implementada.
+            </div>
+           
+  </div>
+
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-file-alt"></i></div>
+        <div>
+            <div class="app-name">Documentación para fabricación</div>
+            <div class="app-desc">
+                Elaboración de esquemáticos, PCB, lista de materiales y manual de operación para asegurar reproducibilidad.
+            </div>
+        </div>
+    </div>
+<div class="circuit-illustration">
+          <img src="img/fibrilacion Auricular.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        <p class="circuit-caption"> Señal simulada con fibrilación auricular</p>
+        </div>
+<div class="circuit-illustration">
+          <img src="img/T-inverida.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+          <p class="circuit-caption"> Señal simulada con inversión de la onda T</p>
+        </div>
+<div class="circuit-illustration">
+          <img src="img/hipertrofia.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+          <p class="circuit-caption"> Señal simulada con hipertrofia ventricular</p>
+</div>
+<p class="section-label">Resultados</p>
+<h2>Sintetizador ECG funcional y validado experimentalmente</h2>
+
+<p>
+    El resultado final fue un sintetizador analógico de ECG completamente funcional, capaz de generar de forma periódica
+    una señal electrocardiográfica compuesta por las subondas P, QRS y T claramente diferenciadas. Las pruebas realizadas
+    con instrumentación de laboratorio confirmaron la estabilidad de la frecuencia cardíaca base y la correcta respuesta
+    de los controles de temporización implementados.
+</p>
+
+<p>
+    Las formas de onda registradas mediante osciloscopio mostraron una correspondencia satisfactoria con el modelo
+    teórico propuesto, tanto en condiciones normales como en las anomalías cardíacas simuladas. Asimismo, la calibración
+    adecuada de los controles permitió mantener una elevada reproducibilidad de la señal durante sesiones prolongadas
+    de prueba.
+</p>
+
+<p>
+    El análisis crítico evidenció que las anomalías asociadas a variaciones extremas en la duración de la onda T podían
+    experimentar ligeras atenuaciones debido al filtrado analógico. Sin embargo, estos efectos fueron compensados
+    mediante ajustes en la etapa sumadora, logrando preservar la fidelidad de la señal final.
+</p>
+
+<p>
+    Como resultado tangible, se obtuvo un sistema documentado y listo para reproducción, acompañado de esquemáticos,
+    capturas de osciloscopio comparativas, diseño PCB y documentación técnica completa. El prototipo constituye una
+    plataforma útil para aplicaciones educativas, calibración de equipos biomédicos y futuros desarrollos en
+    instrumentación biomédica.
+</p>
+
+      <!-- Circuit mockup (SVG illustration) -->
+
       <!-- Applications -->
       <div class="apps-block">
         <p class="section-label">Contenido desarrollado</p>
@@ -73,103 +250,16 @@
           Como se puede observar en la imagen, la señal ECG se compone de varias ondas características (P, QRS, T) que representan la actividad eléctrica del corazón. En este proyecto, se diseñó un circuito analógico utilizando amplificadores operacionales (LM358) y filtros activos para generar formas de onda que simulan tanto ritmos cardíacos normales como patologías específicas.
         </p>
         <!-- señal ECG en osciloscopio -->
-        <div class="circuit-illustration">
-          <img src="img/señalECG osc.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
-        </div>
+        
 
 
-      </div>
-
-      <!-- Simulations -->
-      <div class="sim-block">
-        <p class="section-label" style="margin-top:52px;">Metodología</p>
-        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Proceso de validación</h2>
-        <div class="sim-grid">
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-wave-square"></i></div>
-            <div class="sim-title">Simulación MultiSim</div>
-            <div class="sim-sub">Análisis AC, DC y transitorio de cada circuito</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-flask"></i></div>
-            <div class="sim-title">Prototipado en laboratorio</div>
-            <div class="sim-sub">Validación con componentes reales (LM741, TL071, LM324)</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-chart-line"></i></div>
-            <div class="sim-title">Capturas de osciloscopio</div>
-            <div class="sim-sub">Evidencia fotográfica de respuesta en frecuencia y transitoria</div>
-          </div>
-          <div class="sim-card">
-            <div class="sim-icon"><i class="fas fa-file-code"></i></div>
-            <div class="sim-title">Maquetación en LaTeX</div>
-            <div class="sim-sub">Ecuaciones, esquemáticos (CircuiTikZ) y gráficos vectoriales</div>
-          </div>
-        </div>
-      </div>
+        <p>
+            Entre los principales desafíos técnicos se encontró la sincronización adecuada entre el complejo QRS y las ondas P.
+        </p>
 
     </main>
-
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-
-      <div class="side-card">
-        <h4>Tecnologías y herramientas</h4>
-        <div class="tags-wrap">
-          <span class="tag">LaTeX</span>
-          <span class="tag">MultiSim</span>
-          <span class="tag">CircuiTikZ</span>
-          <span class="tag">MATLAB</span>
-          <span class="tag orange">LM358</span>
-          <!--<span class="tag orange">TL071</span>
-          <span class="tag orange">LM324</span>-->
-          <span class="tag">Osciloscopio</span>
-          <span class="tag">(timers 555) configuracion monostable y astable</span>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h4>Datos del proyecto</h4>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-book"></i></div>
-          <div>
-            <div class="stat-label">Tipo</div>
-            <div class="stat-val">Publicación técnica</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
-          <div>
-            <div class="stat-label">Aplicaciones</div>
-            <div class="stat-val">instrumentación electrónica</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-user-edit"></i></div>
-          <div>
-            <div class="stat-label">Rol</div>
-            <div class="stat-val">Lider del proyecto</div>
-          </div>
-        </div>
-        <div class="stat-row">
-          <div class="stat-icon"><i class="fas fa-calendar"></i></div>
-          <div>
-            <div class="stat-label">Año</div>
-            <div class="stat-val">2026</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="side-card">
-        <h4>¿Te interesa colaborar?</h4>
-        <a href="index.html#contacto" class="cta-btn">
-          <i class="fas fa-envelope" style="margin-right:8px;"></i>Escribir Nicolas
-        </a>
-      </div>
-
     </aside>
-
-  </div>
+      </div>
 
   <script>
     // El botón "Volver" regresa al historial o a index.html
@@ -179,211 +269,6 @@
         history.back();
       }
     });
-
-    // Mapeo de tipos de componente a símbolos SVG
-    function dibujarComponente(ctx, comp, index) {
-        const type = comp.type;
-        const id = comp.id || '';
-        
-        // Dibujar según el tipo
-        if (type === 'node') {
-            dibujarNode(ctx, comp);
-        } else if (type === 'path') {
-            dibujarPath(ctx, comp);
-        } else if (type === 'wire') {
-            dibujarWire(ctx, comp);
-        } else if (type === 'rect') {
-            dibujarRect(ctx, comp);
-        }
-    }
-    
-    function dibujarNode(ctx, comp) {
-        const x = comp.position?.x || 0;
-        const y = comp.position?.y || 0;
-        const id = comp.id || '';
-        
-        if (id === 'op amp') {
-            // Dibujar símbolo de amplificador operacional
-            ctx.fillStyle = '#f0f0f0';
-            ctx.strokeStyle = '#004b7c';
-            ctx.lineWidth = 2;
-            // Triángulo del op-amp
-            ctx.beginPath();
-            ctx.moveTo(x - 30, y - 30);
-            ctx.lineTo(x - 30, y + 30);
-            ctx.lineTo(x + 30, y);
-            ctx.closePath();
-            ctx.fill();
-            ctx.stroke();
-            // Etiqueta
-            ctx.fillStyle = '#004b7c';
-            ctx.font = '12px "Inter", sans-serif';
-            ctx.fillText('Op-Amp', x - 20, y - 35);
-        } 
-        else if (id === 'ground') {
-            // Dibujar símbolo de tierra
-            ctx.beginPath();
-            ctx.moveTo(x - 15, y);
-            ctx.lineTo(x + 15, y);
-            ctx.moveTo(x - 10, y + 5);
-            ctx.lineTo(x + 10, y + 5);
-            ctx.moveTo(x - 5, y + 10);
-            ctx.lineTo(x + 5, y + 10);
-            ctx.strokeStyle = '#2c3e50';
-            ctx.lineWidth = 1.5;
-            ctx.stroke();
-        }
-        else if (id === 'vcc') {
-            ctx.fillStyle = '#dc2626';
-            ctx.font = 'bold 10px "Inter", sans-serif';
-            ctx.fillText('VCC', x - 10, y - 5);
-        }
-        else if (id === 'spdt') {
-            // Interruptor SPDT
-            ctx.beginPath();
-            ctx.moveTo(x - 20, y);
-            ctx.lineTo(x, y - 15);
-            ctx.lineTo(x, y + 15);
-            ctx.closePath();
-            ctx.fillStyle = '#fbbf24';
-            ctx.fill();
-            ctx.strokeStyle = '#92400e';
-            ctx.stroke();
-            ctx.fillStyle = '#92400e';
-            ctx.fillText('SW', x - 8, y + 4);
-        }
-        else if (id === 'iecsocketR') {
-            ctx.fillStyle = '#059669';
-            ctx.font = '10px "Inter", sans-serif';
-            ctx.fillText('555', x - 8, y + 4);
-        }
-    }
-    
-    function dibujarPath(ctx, comp) {
-        const points = comp.points || [];
-        const id = comp.id || '';
-        
-        if (points.length < 2) return;
-        
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y);
-        for (let i = 1; i < points.length; i++) {
-            ctx.lineTo(points[i].x, points[i].y);
-        }
-        ctx.strokeStyle = '#1a365d';
-        ctx.lineWidth = (comp.stroke?.width === '0.4pt') ? 1.5 : 2;
-        ctx.stroke();
-        
-        // Añadir texto para resistencias y capacitores
-        if (comp.text?.text) {
-            const midX = (points[0].x + points[points.length-1].x) / 2;
-            const midY = (points[0].y + points[points.length-1].y) / 2;
-            ctx.fillStyle = '#2d3748';
-            ctx.font = '11px "Inter", sans-serif';
-            ctx.fillText(comp.text.text, midX - 20, midY - 5);
-        }
-    }
-    
-    function dibujarWire(ctx, comp) {
-        const points = comp.points || [];
-        if (points.length < 2) return;
-        
-        ctx.beginPath();
-        ctx.moveTo(points[0].x, points[0].y);
-        for (let i = 1; i < points.length; i++) {
-            ctx.lineTo(points[i].x, points[i].y);
-        }
-        ctx.strokeStyle = '#2563eb';
-        ctx.lineWidth = (comp.stroke?.width === '0.4pt') ? 1.2 : 1.8;
-        ctx.stroke();
-    }
-    
-    function dibujarRect(ctx, comp) {
-        const x = comp.position?.x || 0;
-        const y = comp.position?.y || 0;
-        const w = comp.size?.x || 100;
-        const h = comp.size?.y || 50;
-        const strokeOpt = comp.stroke || {};
-        
-        if (strokeOpt.opacity === 0 || strokeOpt.width === '0') {
-            ctx.fillStyle = '#f8fafc';
-            ctx.fillRect(x, y, w, h);
-        } else {
-            ctx.strokeStyle = '#cbd5e1';
-            ctx.lineWidth = 1;
-            ctx.strokeRect(x, y, w, h);
-        }
-        
-        if (comp.text?.text) {
-            ctx.fillStyle = '#1e293b';
-            ctx.font = 'bold 12px "Inter", sans-serif';
-            // Escalar la posición del texto
-            ctx.fillText(comp.text.text, x + 10, y + 25);
-        }
-    }
-    
-    // Función principal para renderizar el circuito
-    async function renderizarCircuito() {
-        try {
-            const response = await fetch('Circuit(1).json');
-            if (!response.ok) {
-                throw new Error(`No se pudo cargar el archivo: ${response.status}`);
-            }
-            const data = await response.json();
-            
-            const components = data.components || [];
-            console.log(`Cargados ${components.length} componentes`);
-            
-            const svg = document.getElementById('circuit-svg');
-            const svgNS = "http://www.w3.org/2000/svg";
-            
-            // Limpiar SVG
-            while (svg.firstChild) {
-                svg.removeChild(svg.firstChild);
-            }
-            
-            // Crear un canvas virtual para dibujar
-            const canvas = document.createElement('canvas');
-            canvas.width = 3200;
-            canvas.height = 2800;
-            const ctx = canvas.getContext('2d');
-            
-            // Limpiar canvas
-            ctx.fillStyle = 'white';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-            
-            // Dibujar cada componente
-            components.forEach((comp, idx) => {
-                dibujarComponente(ctx, comp, idx);
-            });
-            
-            // Convertir canvas a SVG (simplificado: mostrar como imagen)
-            const img = document.createElementNS(svgNS, 'image');
-            img.setAttribute('href', canvas.toDataURL());
-            img.setAttribute('width', '3200');
-            img.setAttribute('height', '2800');
-            svg.appendChild(img);
-            
-            // Añadir zoom
-            const zoomInput = document.getElementById('zoom');
-            zoomInput.oninput = (e) => {
-                const zoom = parseFloat(e.target.value);
-                svg.setAttribute('transform', `scale(${zoom})`);
-                svg.style.transformOrigin = '0 0';
-            };
-            
-        } catch (error) {
-            console.error('Error:', error);
-            const svg = document.getElementById('circuit-svg');
-            svg.innerHTML = `<text x="100" y="100" fill="red" font-size="20">Error: ${error.message}</text>`;
-        }
-    }
-    
-    document.getElementById('loadBtn').addEventListener('click', renderizarCircuito);
-    
-    // Cargar automáticamente al iniciar
-    renderizarCircuito();
-
   </script>
 
 </body>
