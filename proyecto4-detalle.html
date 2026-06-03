@@ -260,9 +260,68 @@
             Entre los principales desafíos técnicos se encontró la sincronización adecuada entre el complejo QRS y las ondas P.
         </p>
 
-    </main>
+
+        <p>
+            El resultado final fue un sintetizador analógico de ECG completamente funcional, capaz de generar de forma periódica una señal electrocardiográfica compuesta por las subondas P, QRS y T claramente diferenciadas. Las pruebas realizadas con instrumentación de laboratorio confirmaron la estabilidad de la frecuencia cardíaca base y la correcta respuesta de los controles de temporización implementados.
+        </p>
+
+         <div class="circuit-illustration">
+          <img src="img/ecgcompleto.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+
+         <p>
+            Las formas de onda registradas mediante osciloscopio mostraron una correspondencia satisfactoria con el modelo teórico propuesto, tanto en condiciones normales como en las anomalías cardíacas simuladas. Asimismo, la calibración adecuada de los controles permitió mantener una elevada reproducibilidad de la señal durante sesiones prolongadas de prueba.
+        </p>
+
+         <div class="circuit-illustration">
+          <img src="img/fibrilacion Auricular.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+
+         <p>
+            El análisis crítico evidenció que las anomalías asociadas a variaciones extremas en la duración de la onda T podían experimentar ligeras atenuaciones debido al filtrado analógico. Sin embargo, estos efectos fueron compensados mediante ajustes en la etapa sumadora, logrando preservar la fidelidad de la señal final.
+        </p>
+
+         <div class="circuit-illustration">
+          <img src="img/T-inverida.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        </div>
+
+         <p>
+            Como resultado tangible, se obtuvo un sistema documentado y listo para reproducción, acompañado de esquemáticos, capturas de osciloscopio comparativas, diseño PCB y documentación técnica completa. El prototipo constituye una plataforma útil para aplicaciones educativas, calibración de equipos biomédicos y futuros desarrollos en instrumentación biomédica.
+        </p>
+        <h3>Resultados Obtenidos</h3>
+        <p>
+para los que quieran profundizar en los detalles técnicos, se adjunta el documento completo del proyecto, que incluye el diseño del circuito, 
+la metodología de validación y los resultados obtenidos durante las pruebas de laboratorio. Además, se proporciona 
+un manual de operación para facilitar la reproducción y uso del sintetizador ECG en diferentes contextos educativos y 
+profesionales.</p>
+<a href="un_sintetizador_analógico_de_señal_ECG.pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Documento de sintetizador analógico de señal (PDF)
+</a>
+<a 
+href="Manual_Operacion_Sintetizador_ECG (1).docx.pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Manual de operación (PDF)
+</a>
+
+Para los interesados en realizar el procesamiento de la señales de entrada y la salida del sistema que es la 
+generacion del ECG, se adjunta los archivos .csv con los datos obtenidos durante las pruebas de laboratorio, 
+que pueden ser utilizados para análisis adicionales.
+<div csv-data>
+    <a href="lnb.csv" target="_blank" class="cta-btn-outline" id="btnExtracto">
+        <i class="fas fa-file-csv" style="margin-right:8px;"></i>Datos de prueba en laboratorio señal entrada (CSV)
+    
+    </a>
+    </div>
+   
+    <div csv-data>
+    <a href="ecgout.csv" target="_blank" class="cta-btn-outline" id="btnExtracto">
+        <i class="fas fa-file-csv" style="margin-right:8px;"></i>Datos de prueba en laboratorio señal salida (CSV)
+    
+    </a>
+    </div>
+
+</main>
     </aside>
-      </div>
+      
 
   <script>
     // El botón "Volver" regresa al historial o a index.html
