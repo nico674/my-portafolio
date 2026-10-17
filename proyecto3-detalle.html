@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="proyecto1.css">
+    </head>
+
+
+  <a class="back-btn" href="index.html" id="backBtn">
+    <i class="fas fa-arrow-left"></i> Volver al portafolio
+  </a>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+     <!-- <div class="category-pill">
+        <i class="fas fa-book-open"></i>
+        Publicación técnica · Electrónica analógica
+      </div>-->
+      <h1 class="hero-title">
+        Tutorial de Diseño de PCB y <br>
+        <span class="hero-highlight">Manufactura Digital en EasyEDA</span>
+      </h1>
+    <!--<div class="hero-meta">
+        <div class="meta-item"><i class="fas fa-calendar-alt"></i> 2024</div>
+        <div class="meta-item"><i class="fas fa-users"></i> Colaboración editorial</div>
+        <div class="meta-item"><i class="fas fa-microchip"></i> 6 aplicaciones desarrolladas</div>
+        <div class="meta-item"><i class="fas fa-file-alt"></i> LaTeX · LTspice · Hardware</div>
+      </div>-->
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <div class="content-wrap">
+
+    <!-- MAIN COLUMN -->
+    <main>
+
+  <div class="prose">
+    <p class="section-label">Descripción del proyecto</p>
+    
+    <h1>Fundamentos y Diseño de PCB</h1>
+    
+    <div class="subtitulo">
+        Medidor de humedad para café y cacao | Liderazgo técnico del proceso
+    </div>
+
+    <p class="section-label">Objetivo del proyecto</p>
+<h2>Diseño industrial de una PCB para instrumentación electrónica</h2>
+
+<p>
+    El objetivo del proyecto fue diseñar, optimizar y preparar para manufactura industrial una placa de circuito impreso
+    (PCB) profesional para el medidor de humedad de café y cacao, garantizando el cumplimiento de estándares internacionales
+    IPC, la estabilidad eléctrica del sistema operando a 100 kHz y la viabilidad económica de fabricación. Esta fase fue
+    desarrollada bajo mi liderazgo técnico, coordinando simultáneamente las actividades de validación experimental y diseño
+    electrónico para acelerar el ciclo de mejora del producto.
+</p>
+
+ <div class="circuit-illustration">
+          <img src="img/medidor humedad.jpeg" alt="Diagrama del circuito generador de señales ECG" width="500" height="300">
+        <p>Imagen del diseño final del medidor de humedad para café y cacao</p>
+        </div>
+
+<p class="section-label">Alcance</p>
+<h2>Desde el diseño electrónico hasta la fabricación industrial</h2>
+
+<p>
+    El alcance de esta etapa comprendió la definición de la arquitectura física de la PCB, la configuración de reglas
+    de diseño basadas en estándares internacionales IPC y la preparación de toda la documentación necesaria para
+    manufactura industrial.
+</p>
+
+<p>
+    Se definió un formato compacto de 70 mm × 45 mm, utilizando una estrategia de dos capas donde la capa superior
+    aloja señales y componentes SMD, mientras que la capa inferior funciona como un plano de tierra sólido para reducir
+    ruido e incrementar la estabilidad del sistema. Asimismo, se desarrollaron los archivos de fabricación GERBER,
+    la lista de materiales (BOM) y el archivo Pick & Place requeridos para ensamblaje automatizado en JLCPCB.
+</p>
+
+<p>
+    El proyecto también contempló la selección y justificación técnica de componentes, la aplicación de prácticas
+    de diseño para señales analógicas de 100 kHz y la gestión presupuestaria necesaria para garantizar la viabilidad
+    del prototipo final.
+</p>
+
+<p class="section-label">Metodología de trabajo</p>
+<h2>Diseño concurrente y validación en tiempo real</h2>
+
+<p>
+    Organicé al equipo bajo una estrategia de trabajo simultáneo que permitió reducir significativamente los tiempos
+    de desarrollo. Mientras Daniel Felipe Garrido se concentraba en el ruteo y diseño de la PCB utilizando EasyEDA,
+    asumí en paralelo las pruebas de estabilidad, validación de señal y análisis del comportamiento de la etapa
+    analógica del sistema.
+</p>
+
+<p>
+    Los resultados obtenidos en laboratorio eran comunicados en tiempo real, permitiendo iteraciones rápidas sobre
+    el diseño de la etapa de amplificación y optimizaciones aplicadas en menos de 48 horas. Esta dinámica redujo el
+    tiempo de maduración del diseño y permitió detectar problemas potenciales antes de la fabricación.
+</p>
+
+<p>
+    Desde las primeras etapas se aplicaron criterios DFM (Design for Manufacturing), incorporando restricciones de
+    exclusión de cobre en bordes, verificación de serigrafías fuera de pads, alineación funcional de componentes y
+    configuración completa de reglas DRC basadas en normas IPC para asegurar un diseño listo para producción industrial.
+</p>
+
+<p class="section-label">Documentación del proceso</p>
+<h2>Diseño respaldado por normas internacionales</h2>
+
+<p>
+    Todo el proceso de diseño fue documentado exhaustivamente, registrando cada decisión técnica y su correspondiente
+    justificación normativa. Se documentó la optimización del tamaño de la placa, la utilización de un plano de tierra
+    sólido para minimizar ruido electromagnético y mejorar la disipación térmica, así como la distribución estratégica
+    de señales y componentes.
+</p>
+
+<p>
+    Para garantizar un comportamiento estable a 100 kHz se incorporaron condensadores de desacoplo de 100 nF próximos
+    a los pines de alimentación de cada integrado, se aplicó la regla 3W para minimizar diafonía entre pistas y se
+    ubicaron las resistencias de realimentación inmediatamente adyacentes a los pines del operacional para reducir
+    capacitancias parásitas.
+</p>
+
+<p>
+    La documentación incluyó además la aplicación de las normas IPC-2221 para cálculo de anchos de pista y separación
+    eléctrica, IPC-7351 para el diseño de huellas de componentes y los criterios de aceptación IPC-A-610 Clase 2 para
+    electrónica de servicio dedicado. Finalmente, se registró la preparación de todos los entregables de fabricación
+    requeridos por JLCPCB.
+</p>
+
+<p class="section-label">Contribución personal</p>
+<h2>Liderazgo técnico y toma de decisiones de ingeniería</h2>
+
+<p>
+    Mi contribución principal consistió en liderar integralmente el proceso de diseño de la PCB, coordinando las
+    actividades de validación experimental y desarrollo del layout de manera simultánea. Esta organización permitió
+    que las pruebas de estabilidad y el diseño físico avanzaran en paralelo, acelerando significativamente el ciclo
+    de optimización del proyecto.
+</p>
+
+<p>
+    Realicé personalmente las pruebas de comportamiento de la etapa analógica y reporté los hallazgos obtenidos en
+    laboratorio para retroalimentar el diseño de la PCB. Además, tomé la decisión técnica de sustituir el amplificador
+    operacional MCP6022 por el TL082, justificando esta elección por su compatibilidad con fuentes de ±9 V, su mayor
+    margen operativo y su disponibilidad comercial.
+</p>
+
+<p>
+    También gestioné el incremento presupuestario de 20 USD a 40 USD, documentando de manera transparente la necesidad
+    de incorporar componentes extendidos indispensables para la funcionalidad real del medidor de humedad, garantizando
+    un equilibrio adecuado entre desempeño técnico y viabilidad económica.
+</p>
+
+<p class="section-label">Soluciones implementadas</p>
+<h2>Optimización del diseño para manufactura y estabilidad</h2>
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-microchip"></i></div>
+        <div>
+            <div class="app-name">Sustitución del MCP6022 por TL082</div>
+            <div class="app-desc">
+                Se garantizó operación segura con alimentación de ±9 V, mejorando robustez eléctrica y disponibilidad comercial.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-layer-group"></i></div>
+        <div>
+            <div class="app-name">Plano de tierra sólido</div>
+            <div class="app-desc">
+                Implementación de una capa inferior dedicada a GND para reducir ruido electromagnético y mejorar la estabilidad.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-wave-square"></i></div>
+        <div>
+            <div class="app-name">Diseño optimizado para 100 kHz</div>
+            <div class="app-desc">
+                Uso de desacoplo local, regla 3W y minimización de la realimentación para preservar la estabilidad del sistema.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-check-circle"></i></div>
+        <div>
+            <div class="app-name">Cumplimiento normativo IPC</div>
+            <div class="app-desc">
+                Configuración de reglas DRC y DFM conforme a IPC-2221, IPC-7351 e IPC-A-610 Clase 2.
+            </div>
+        </div>
+    </div>
+
+    <div class="app-card">
+        <div class="app-num"><i class="fas fa-industry"></i></div>
+        <div>
+            <div class="app-name">Preparación para manufactura</div>
+            <div class="app-desc">
+                Generación completa de archivos GERBER, BOM y Pick & Place listos para fabricación industrial.
+            </div>
+        </div>
+    </div>
+
+</div>
+<p class="section-label">Resultados</p>
+<h2>PCB lista para producción industrial</h2>
+
+<p>
+    Como resultado del proyecto se obtuvo una PCB profesional de 70 mm × 45 mm optimizada tanto desde el punto de
+    vista técnico como económico. El diseño final cumplió con todos los criterios DRC y DFM establecidos, garantizando
+    una fabricación libre de errores y compatible con procesos industriales de ensamblaje.
+</p>
+
+<p>
+    Las pruebas de laboratorio confirmaron la estabilidad de las etapas analógicas, verificando que el comportamiento
+    experimental coincidía con los parámetros esperados después de las optimizaciones realizadas durante el proceso
+    de diseño. La implementación del plano de tierra, los condensadores de desacoplo y las reglas de distribución
+    de señales contribuyeron significativamente a la calidad del resultado final.
+</p>
+
+<p>
+    Se generaron exitosamente los archivos GERBER, BOM y Pick & Place listos para envío a JLCPCB, junto con una
+    documentación técnica completa que respalda cada decisión de diseño, desde la selección de componentes hasta
+    la aplicación de estándares IPC. Como resultado, el proyecto dejó una metodología replicable para futuros
+    desarrollos de instrumentación electrónica orientados a manufactura profesional.
+</p>
+
+<p>los archivos GERBER, BOM y Pick & Place estan en mi repositorio de git hub el archivo se llama Proyecto_3 .zip</p>
+
+<a href="Guía de Diseño de PCB y Manufactura Digital - Proyecto 3 V2 (2).pdf" target="_blank" class="cta-btn-outline" id="btnExtracto">
+    <i class="fas fa-file-pdf" style="margin-right:8px;"></i>Ver documentación completa (PDF)
+</a>
+
+    <hr>
+
+    <p style="font-size: 0.8rem; color: #64748b; text-align: center; margin-top: 20px;">
+        ✅ Diseño optimizado para manufactura industrial | Estándares IPC-2221, IPC-7351, IPC-A-610 | EasyEDA → JLCPCB
+    </p>
+</div>
+
+      <!-- Circuit mockup (SVG illustration) -->
+      <!-- Applications -->
+<!--  
+      
+      <div class="apps-block">
+        <p class="section-label">Contenido desarrollado</p>
+        <h2 style="font-family:'DM Serif Display',serif;font-size:1.8rem;margin-bottom:14px;">Las 6 aplicaciones del libro</h2>
+        <div class="app-list">
+          <div class="app-card">
+            <div class="app-num">1</div>
+            <div>
+              <div class="app-name">Amplificador diferencial de alta impedancia</div>
+              <div class="app-desc">Diseño de etapas de entrada con rechazo de modo común (CMRR &gt; 80 dB) para instrumentación de precisión.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">2</div>
+            <div>
+              <div class="app-name">Filtro activo Sallen-Key de segundo orden</div>
+              <div class="app-desc">Implementación paso-bajo y paso-alto con respuesta Butterworth/Chebyshev, análisis de sensibilidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">3</div>
+            <div>
+              <div class="app-name">Oscilador de cuadratura RC con op-amp</div>
+              <div class="app-desc">Generación de señales senoidales en cuadratura, distorsión THD &lt; 1 %, control de amplitud automático.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">4</div>
+            <div>
+              <div class="app-name">Integrador y diferenciador de precisión</div>
+              <div class="app-desc">Circuitos para procesamiento de señal analógica, compensación de offset y análisis de estabilidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">5</div>
+            <div>
+              <div class="app-name">Convertidor V/I y I/V de 4-20 mA</div>
+              <div class="app-desc">Interfaz para sensores industriales, protección ante cortocircuito y análisis de error de linealidad.</div>
+            </div>
+          </div>
+          <div class="app-card">
+            <div class="app-num">6</div>
+            <div>
+              <div class="app-name">Comparador con histéresis (Schmitt Trigger)</div>
+              <div class="app-desc">Diseño de umbrales ajustables, eliminación de rebotes y aplicación en detección de cruce por cero.</div>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <!-- Simulations -->
+    
+
+    </main>
+
+    <!-- SIDEBAR -->
+   
+        <!--<div class="stat-row">
+          <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+          <div>
+            <div class="stat-label">Aplicaciones</div>
+            <div class="stat-val">preconsevir</div>
+          </div>
+        </div>-->
+       <!---
+      <div class="side-card">
+        <h4>¿Te interesa colaborar?</h4>
+        <a href="index.html#contacto" class="cta-btn">
+          <i class="fas fa-envelope" style="margin-right:8px;"></i>Escribir a Nicolas
+        </a>
+       
+      </div>
+--->
+    </aside>
+
+  </div>
+
+  <script>
+    // El botón "Volver" regresa al historial o a index.html
+    document.getElementById('backBtn').addEventListener('click', function(e) {
+      if (history.length > 1) {
+        e.preventDefault();
+        history.back();
+      }
+    });
+  </script>
+
+
+
+</body>
+</html>
